@@ -455,7 +455,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                       이 문서는
                       <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">2023년 11월 3일자 <abbr title="World Wide Web Consortium">W3C</abbr> 프로세스 문서(Process Document)</a>의
                       적용을 받는다.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">요약</a></li><li class="tocline"><a class="tocxref" href="#sotd">현재 문서의 상태</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>소개</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#terminology"><bdi class="secno">1.1 </bdi>용어</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.2 </bdi>적합성</a></li></ol></li><li class="tocline"><a class="tocxref" href="#data-model"><bdi class="secno">2. </bdi>데이터 모델</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verification-methods"><bdi class="secno">2.1 </bdi>검증 방법</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#multikey"><bdi class="secno">2.1.1 </bdi>Multikey</a></li></ol></li><li class="tocline"><a class="tocxref" href="#proof-representations"><bdi class="secno">2.2 </bdi>증명 표현</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dataintegrityproof"><bdi class="secno">2.2.1 </bdi>DataIntegrityProof</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#algorithms"><bdi class="secno">3. </bdi>알고리즘</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#instantiate-cryptosuite"><bdi class="secno">3.1 </bdi>암호 스위트 인스턴스화</a></li><li class="tocline"><a class="tocxref" href="#eddsa-rdfc-2022"><bdi class="secno">3.2 </bdi>eddsa-rdfc-2022</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#create-proof-eddsa-rdfc-2022"><bdi class="secno">3.2.1 </bdi>증명 생성(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#verify-proof-eddsa-rdfc-2022"><bdi class="secno">3.2.2 </bdi>증명 검증(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#transformation-eddsa-rdfc-2022"><bdi class="secno">3.2.3 </bdi>변환(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#hashing-eddsa-rdfc-2022"><bdi class="secno">3.2.4 </bdi>해싱(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-configuration-eddsa-rdfc-2022"><bdi class="secno">3.2.5 </bdi>증명 구성(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-serialization-eddsa-rdfc-2022"><bdi class="secno">3.2.6 </bdi>증명 직렬화(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-verification-eddsa-rdfc-2022"><bdi class="secno">3.2.7 </bdi>증명 확인(eddsa-rdfc-2022)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#eddsa-jcs-2022"><bdi class="secno">3.3 </bdi>eddsa-jcs-2022</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#create-proof-eddsa-jcs-2022"><bdi class="secno">3.3.1 </bdi>증명 생성(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#verify-proof-eddsa-jcs-2022"><bdi class="secno">3.3.2 </bdi>증명 검증(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#transformation-eddsa-jcs-2022"><bdi class="secno">3.3.3 </bdi>변환(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#hashing-eddsa-jcs-2022"><bdi class="secno">3.3.4 </bdi>해싱(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-configuration-eddsa-jcs-2022"><bdi class="secno">3.3.5 </bdi>증명 구성(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-serialization-eddsa-jcs-2022"><bdi class="secno">3.3.6 </bdi>증명 직렬화(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-verification-eddsa-jcs-2022"><bdi class="secno">3.3.7 </bdi>증명 확인(eddsa-jcs-2022)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#security-considerations"><bdi class="secno">4. </bdi>Security Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#security-properties-of-ed25519-implementations"><bdi class="secno">4.1 </bdi>Security Properties of Ed25519 Implementations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#signature-security-properties"><bdi class="secno">4.1.1 </bdi>Signature Security Properties</a></li><li class="tocline"><a class="tocxref" href="#achieving-ed25519-security-properties"><bdi class="secno">4.1.2 </bdi>Achieving Ed25519 Security Properties</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#privacy-considerations"><bdi class="secno">5. </bdi>Privacy Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#selective-and-unlinkable-disclosure"><bdi class="secno">5.1 </bdi>Selective and Unlinkable Disclosure</a></li></ol></li><li class="tocline"><a class="tocxref" href="#the-ed25519signature2020-suite"><bdi class="secno">A. </bdi>The Ed25519Signature2020 Suite</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data-model-0"><bdi class="secno">A.1 </bdi>Data Model</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verification-methods-0"><bdi class="secno">A.1.1 </bdi>Verification Methods</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ed25519verificationkey2020"><bdi class="secno">A.1.1.1 </bdi>Ed25519VerificationKey2020</a></li></ol></li><li class="tocline"><a class="tocxref" href="#proof-representations-0"><bdi class="secno">A.1.2 </bdi>Proof representations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ed25519signature2020"><bdi class="secno">A.1.2.1 </bdi>Ed25519Signature2020</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#algorithms-0"><bdi class="secno">A.2 </bdi>Algorithms</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ed25519signature2020-0"><bdi class="secno">A.2.1 </bdi>Ed25519Signature2020</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#add-proof-ed25519signature2020"><bdi class="secno">A.2.1.1 </bdi>Add Proof (Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#verify-proof-ed25519signature2020"><bdi class="secno">A.2.1.2 </bdi>Verify Proof (Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#transformation-ed25519signature2020"><bdi class="secno">A.2.1.3 </bdi>Transformation (Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#hashing-ed25519signature2020"><bdi class="secno">A.2.1.4 </bdi>Hashing (Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#proof-configuration-ed25519signature2020"><bdi class="secno">A.2.1.5 </bdi>Proof Configuration (Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#proof-serialization-ed25519signature2020"><bdi class="secno">A.2.1.6 </bdi>Proof Serialization (Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#proof-verification-ed25519signature2020"><bdi class="secno">A.2.1.7 </bdi>Proof Verification (Ed25519Signature2020)</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#test-vectors"><bdi class="secno">B. </bdi>Test Vectors</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#representation-eddsa-rdfc-2022"><bdi class="secno">B.1 </bdi>Representation: eddsa-rdfc-2022</a></li><li class="tocline"><a class="tocxref" href="#enhanced-example-for-representation-eddsa-rdfc-2022"><bdi class="secno">B.2 </bdi>Enhanced Example for Representation: eddsa-rdfc-2022</a></li><li class="tocline"><a class="tocxref" href="#representation-eddsa-jcs-2022"><bdi class="secno">B.3 </bdi>Representation: eddsa-jcs-2022</a></li><li class="tocline"><a class="tocxref" href="#representation-ed25519signature2020"><bdi class="secno">B.4 </bdi>Representation: Ed25519Signature2020</a></li><li class="tocline"><a class="tocxref" href="#proof-sets-and-chains"><bdi class="secno">B.5 </bdi>Proof Sets and Chains</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#proof-set"><bdi class="secno">B.5.1 </bdi>Proof Set</a></li><li class="tocline"><a class="tocxref" href="#proof-chain-with-multiple-dependencies"><bdi class="secno">B.5.2 </bdi>Proof Chain with Multiple Dependencies</a></li><li class="tocline"><a class="tocxref" href="#extended-proof-chain"><bdi class="secno">B.5.3 </bdi>Extended Proof Chain</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#revision-history"><bdi class="secno">C. </bdi>Revision History</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">D. </bdi>Acknowledgements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">E. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">E.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">E.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">요약</a></li><li class="tocline"><a class="tocxref" href="#sotd">현재 문서의 상태</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>소개</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#terminology"><bdi class="secno">1.1 </bdi>용어</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.2 </bdi>적합성</a></li></ol></li><li class="tocline"><a class="tocxref" href="#data-model"><bdi class="secno">2. </bdi>데이터 모델</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verification-methods"><bdi class="secno">2.1 </bdi>검증 방법</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#multikey"><bdi class="secno">2.1.1 </bdi>Multikey</a></li></ol></li><li class="tocline"><a class="tocxref" href="#proof-representations"><bdi class="secno">2.2 </bdi>증명 표현</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dataintegrityproof"><bdi class="secno">2.2.1 </bdi>DataIntegrityProof</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#algorithms"><bdi class="secno">3. </bdi>알고리즘</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#instantiate-cryptosuite"><bdi class="secno">3.1 </bdi>암호 스위트 인스턴스화</a></li><li class="tocline"><a class="tocxref" href="#eddsa-rdfc-2022"><bdi class="secno">3.2 </bdi>eddsa-rdfc-2022</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#create-proof-eddsa-rdfc-2022"><bdi class="secno">3.2.1 </bdi>증명 생성(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#verify-proof-eddsa-rdfc-2022"><bdi class="secno">3.2.2 </bdi>증명 검증(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#transformation-eddsa-rdfc-2022"><bdi class="secno">3.2.3 </bdi>변환(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#hashing-eddsa-rdfc-2022"><bdi class="secno">3.2.4 </bdi>해싱(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-configuration-eddsa-rdfc-2022"><bdi class="secno">3.2.5 </bdi>증명 구성(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-serialization-eddsa-rdfc-2022"><bdi class="secno">3.2.6 </bdi>증명 직렬화(eddsa-rdfc-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-verification-eddsa-rdfc-2022"><bdi class="secno">3.2.7 </bdi>증명 확인(eddsa-rdfc-2022)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#eddsa-jcs-2022"><bdi class="secno">3.3 </bdi>eddsa-jcs-2022</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#create-proof-eddsa-jcs-2022"><bdi class="secno">3.3.1 </bdi>증명 생성(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#verify-proof-eddsa-jcs-2022"><bdi class="secno">3.3.2 </bdi>증명 검증(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#transformation-eddsa-jcs-2022"><bdi class="secno">3.3.3 </bdi>변환(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#hashing-eddsa-jcs-2022"><bdi class="secno">3.3.4 </bdi>해싱(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-configuration-eddsa-jcs-2022"><bdi class="secno">3.3.5 </bdi>증명 구성(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-serialization-eddsa-jcs-2022"><bdi class="secno">3.3.6 </bdi>증명 직렬화(eddsa-jcs-2022)</a></li><li class="tocline"><a class="tocxref" href="#proof-verification-eddsa-jcs-2022"><bdi class="secno">3.3.7 </bdi>증명 확인(eddsa-jcs-2022)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#security-considerations"><bdi class="secno">4. </bdi>보안 고려사항</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#security-properties-of-ed25519-implementations"><bdi class="secno">4.1 </bdi>Ed25519 구현의 보안 속성</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#signature-security-properties"><bdi class="secno">4.1.1 </bdi>서명 보안 속성</a></li><li class="tocline"><a class="tocxref" href="#achieving-ed25519-security-properties"><bdi class="secno">4.1.2 </bdi>Ed25519 보안 속성 달성</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#privacy-considerations"><bdi class="secno">5. </bdi>프라이버시 고려사항</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#selective-and-unlinkable-disclosure"><bdi class="secno">5.1 </bdi>선택적 공개와 연결 불가능한 공개</a></li></ol></li><li class="tocline"><a class="tocxref" href="#the-ed25519signature2020-suite"><bdi class="secno">A. </bdi>Ed25519Signature2020 스위트</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data-model-0"><bdi class="secno">A.1 </bdi>데이터 모델</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verification-methods-0"><bdi class="secno">A.1.1 </bdi>검증 방법</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ed25519verificationkey2020"><bdi class="secno">A.1.1.1 </bdi>Ed25519VerificationKey2020</a></li></ol></li><li class="tocline"><a class="tocxref" href="#proof-representations-0"><bdi class="secno">A.1.2 </bdi>증명 표현</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ed25519signature2020"><bdi class="secno">A.1.2.1 </bdi>Ed25519Signature2020</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#algorithms-0"><bdi class="secno">A.2 </bdi>알고리즘</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ed25519signature2020-0"><bdi class="secno">A.2.1 </bdi>Ed25519Signature2020</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#add-proof-ed25519signature2020"><bdi class="secno">A.2.1.1 </bdi>증명 추가(Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#verify-proof-ed25519signature2020"><bdi class="secno">A.2.1.2 </bdi>증명 검증(Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#transformation-ed25519signature2020"><bdi class="secno">A.2.1.3 </bdi>변환(Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#hashing-ed25519signature2020"><bdi class="secno">A.2.1.4 </bdi>해싱(Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#proof-configuration-ed25519signature2020"><bdi class="secno">A.2.1.5 </bdi>증명 구성(Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#proof-serialization-ed25519signature2020"><bdi class="secno">A.2.1.6 </bdi>증명 직렬화(Ed25519Signature2020)</a></li><li class="tocline"><a class="tocxref" href="#proof-verification-ed25519signature2020"><bdi class="secno">A.2.1.7 </bdi>증명 확인(Ed25519Signature2020)</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#test-vectors"><bdi class="secno">B. </bdi>테스트 벡터</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#representation-eddsa-rdfc-2022"><bdi class="secno">B.1 </bdi>표현: eddsa-rdfc-2022</a></li><li class="tocline"><a class="tocxref" href="#enhanced-example-for-representation-eddsa-rdfc-2022"><bdi class="secno">B.2 </bdi>표현에 대한 확장 예시: eddsa-rdfc-2022</a></li><li class="tocline"><a class="tocxref" href="#representation-eddsa-jcs-2022"><bdi class="secno">B.3 </bdi>표현: eddsa-jcs-2022</a></li><li class="tocline"><a class="tocxref" href="#representation-ed25519signature2020"><bdi class="secno">B.4 </bdi>표현: Ed25519Signature2020</a></li><li class="tocline"><a class="tocxref" href="#proof-sets-and-chains"><bdi class="secno">B.5 </bdi>증명 집합과 증명 체인</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#proof-set"><bdi class="secno">B.5.1 </bdi>증명 집합</a></li><li class="tocline"><a class="tocxref" href="#proof-chain-with-multiple-dependencies"><bdi class="secno">B.5.2 </bdi>다중 의존성을 갖는 증명 체인</a></li><li class="tocline"><a class="tocxref" href="#extended-proof-chain"><bdi class="secno">B.5.3 </bdi>확장 증명 체인</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#revision-history"><bdi class="secno">C. </bdi>Revision History</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">D. </bdi>Acknowledgements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">E. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">E.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">E.2 </bdi>Informative references</a></li></ol></li></ol></nav>
 
     <section id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>소개</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
       
@@ -1362,48 +1362,43 @@ EdDSA)을 사용하는 에드워즈 곡선 디지털 서명 알고리즘(EdDSA)
 
     </section>
 
-    <section id="security-considerations"><div class="header-wrapper"><h2 id="x4-security-considerations"><bdi class="secno">4. </bdi>Security Considerations</h2><a class="self-link" href="#security-considerations" aria-label="Permalink for Section 4."></a></div>
+    <section id="security-considerations"><div class="header-wrapper"><h2 id="x4-security-considerations"><bdi class="secno">4. </bdi>보안 고려사항</h2><a class="self-link" href="#security-considerations" aria-label="Permalink for Section 4."></a></div>
       
 
       <p class="advisement">
-Before reading this section, readers are urged to familiarize themselves
-with general security advice provided in the
+이 절을 읽기 전에, 독자는
 <a href="https://www.w3.org/TR/vc-data-integrity/#security-considerations">
-Security Considerations section of the Data Integrity specification</a>.
+데이터 무결성 규격의 보안 고려사항 절</a>에서 제공하는 일반적인 보안 조언을
+먼저 숙지할 것을 권한다.
       </p>
 
       <p>
-The following section describes security considerations that developers
-implementing this specification should be aware of in order to create secure
-software.
+다음 절은 이 규격을 구현하는 개발자가 안전한 소프트웨어를 만들기 위해
+알고 있어야 할 보안 고려사항을 기술한다.
       </p>
 
-      <section class="informative" id="security-properties-of-ed25519-implementations"><div class="header-wrapper"><h3 id="x4-1-security-properties-of-ed25519-implementations"><bdi class="secno">4.1 </bdi>Security Properties of Ed25519 Implementations</h3><a class="self-link" href="#security-properties-of-ed25519-implementations" aria-label="Permalink for Section 4.1"></a></div><p><em>이 부분은 비규범적입니다.</em></p>
+      <section class="informative" id="security-properties-of-ed25519-implementations"><div class="header-wrapper"><h3 id="x4-1-security-properties-of-ed25519-implementations"><bdi class="secno">4.1 </bdi>Ed25519 구현의 보안 속성</h3><a class="self-link" href="#security-properties-of-ed25519-implementations" aria-label="Permalink for Section 4.1"></a></div><p><em>이 부분은 비규범적입니다.</em></p>
         
         <p>
-Ed25519 signatures (EdDSA algorithm with edwards25519 curve) have
-been widely adopted, due both to the compact size of the keys and
-signatures and to the speed at
-which signatures can be produced and verified. Many libraries exist that can
-create and verify Ed25519 signatures. Since the publication of [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8032" title="Edwards-Curve Digital Signature Algorithm (EdDSA)">RFC8032</a></cite>],
-security properties of Ed25519 signatures have been rigorously proven (see
-[<cite><a class="bibref" data-link-type="biblio" href="#bib-provable_ed25519" title="The Provable Security of Ed25519: Theory and Practice">Provable_Ed25519</a></cite>] and [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>]). However, it has been observed that a
-significant number of libraries do not achieve these security levels, due to
-missing input validity checks during the signature verification process. In
-this section, we summarize the security levels achievable with Ed25519
-signatures, and indicate how one can determine whether a library will support those
-levels.
+Ed25519 서명(edwards25519 곡선을 사용하는 EdDSA 알고리즘)은 키와 서명의
+크기가 작고 서명을 생성·검증하는 속도가 빠르다는 두 가지 이유로 널리
+채택되어 왔다. Ed25519 서명을 생성하고 검증할 수 있는 라이브러리가 많이
+존재한다. [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8032" title="Edwards-Curve Digital Signature Algorithm (EdDSA)">RFC8032</a></cite>]의 발행 이후, Ed25519 서명의 보안 속성은 엄밀하게
+증명되었다([<cite><a class="bibref" data-link-type="biblio" href="#bib-provable_ed25519" title="The Provable Security of Ed25519: Theory and Practice">Provable_Ed25519</a></cite>] 및 [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>] 참조). 그러나 상당수의
+라이브러리가 서명 검증 과정에서 입력 유효성 검사를 누락하여 이러한 보안
+수준에 도달하지 못한다는 점이 관찰되었다. 이 절에서는 Ed25519 서명으로
+달성할 수 있는 보안 수준을 요약하고, 어떤 라이브러리가 그러한 수준을
+지원하는지 판단하는 방법을 제시한다.
         </p>
-        <section id="signature-security-properties"><div class="header-wrapper"><h4 id="x4-1-1-signature-security-properties"><bdi class="secno">4.1.1 </bdi>Signature Security Properties</h4><a class="self-link" href="#signature-security-properties" aria-label="Permalink for Section 4.1.1"></a></div>
+        <section id="signature-security-properties"><div class="header-wrapper"><h4 id="x4-1-1-signature-security-properties"><bdi class="secno">4.1.1 </bdi>서명 보안 속성</h4><a class="self-link" href="#signature-security-properties" aria-label="Permalink for Section 4.1.1"></a></div>
           
           <p>
-Digital signatures might exhibit a number of desirable cryptographic
-properties [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>] among these are:
+디지털 서명은 여러 가지 바람직한 암호학적 속성을 가질 수 있으며
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>], 그중에는 다음이 있다:
           </p>
           <p>
-<strong>EUF-CMA</strong> (<em>existential unforgeability under
-chosen message attacks</em>) is usually the minimal security property required
-of a signature scheme. It guarantees that any efficient adversary who has the
+<strong>EUF-CMA</strong> (<em>선택 메시지 공격 하에서의 존재적 위조 불가능성(existential unforgeability under
+chosen message attacks)</em>)은 보통 서명 스킴에 요구되는 최소한의 보안 속성이다. It guarantees that any efficient adversary who has the
 public key
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -1529,8 +1524,8 @@ it is called an <em>existential
 forgery</em>.
           </p>
           <p>
-<strong>SUF-CMA</strong> (<em>strong unforgeability under chosen
-message attacks</em>) is a stronger notion than <em>EUF-CMA</em>. It guarantees
+<strong>SUF-CMA</strong> (<em>선택 메시지 공격 하에서의 강한 위조 불가능성(strong unforgeability under chosen
+message attacks)</em>)은 <em>EUF-CMA</em>보다 더 강한 개념이다. It guarantees
 that for any efficient adversary who has the public key
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -1653,7 +1648,7 @@ on an old message. See [<cite><a class="bibref" data-link-type="biblio" href="#b
 have been circumvented with SUF-CMA security over EUF-CMA security.
           </p>
           <p>
-<strong>Binding signature</strong> (BS) We say that a signature
+<strong>구속 서명(Binding signature)</strong> (BS) 어떤 서명
 scheme is <em>binding</em> if no efficient signer can output a tuple
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -1758,9 +1753,9 @@ for the signer to claim later that it has signed a different message; the
 signature <em>binds</em> the signer to the message.
           </p>
           <p>
-<strong>Strongly Binding signature</strong> (SBS) Certain
-applications may require a signature to not only be binding to the message but
-also be binding to the public key. We say that a signature scheme is
+<strong>강하게 구속하는 서명(Strongly Binding signature)</strong> (SBS) 어떤
+응용에서는 서명이 메시지에만 구속될 뿐 아니라 공개키에도 구속되기를 요구할 수
+있다. We say that a signature scheme is
 strongly-binding if any efficient signer cannot output a tuple
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -1908,129 +1903,123 @@ or
 or both (except with negligible probability). See [<cite><a class="bibref" data-link-type="biblio" href="#bib-provable_ed25519" title="The Provable Security of Ed25519: Theory and Practice">Provable_Ed25519</a></cite>] for real
 world attacks that would have been circumvented with the SBS property.
           </p>
-          <p>Note that the <em>BS</em> and <em>SBS</em> properties are forms of
-<em>non-repudiation</em>.
+          <p><em>BS</em>와 <em>SBS</em> 속성은 <em>부인 방지(non-repudiation)</em>의
+한 형태임에 유의한다.
           </p>
         </section>
-        <section id="achieving-ed25519-security-properties"><div class="header-wrapper"><h4 id="x4-1-2-achieving-ed25519-security-properties"><bdi class="secno">4.1.2 </bdi>Achieving Ed25519 Security Properties</h4><a class="self-link" href="#achieving-ed25519-security-properties" aria-label="Permalink for Section 4.1.2"></a></div>
+        <section id="achieving-ed25519-security-properties"><div class="header-wrapper"><h4 id="x4-1-2-achieving-ed25519-security-properties"><bdi class="secno">4.1.2 </bdi>Ed25519 보안 속성 달성</h4><a class="self-link" href="#achieving-ed25519-security-properties" aria-label="Permalink for Section 4.1.2"></a></div>
           
           <p>
-As pointed out in [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>], flaws in Ed25519 libraries
-primarily occur on the signature verification side, where edge cases
-are sometimes not properly checked. An Ed25519 signature library that is in conformance
-with [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8032" title="Edwards-Curve Digital Signature Algorithm (EdDSA)">RFC8032</a></cite>] or [<cite><a class="bibref" data-link-type="biblio" href="#bib-fips-186-5" title="FIPS PUB 186-5: Digital Signature Standard (DSS)">FIPS-186-5</a></cite>], i.e., one that performs <strong>all
-</strong> specified validation checks, will have the <strong>SUF-CMA</strong>
-property in addition to <strong>EUF-CMA</strong>.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>]에서 지적하였듯이, Ed25519 라이브러리의 결함은
+주로 서명 검증 쪽에서 발생하며, 이때 엣지 케이스가 제대로 검사되지 않는
+경우가 있다. [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8032" title="Edwards-Curve Digital Signature Algorithm (EdDSA)">RFC8032</a></cite>] 또는 [<cite><a class="bibref" data-link-type="biblio" href="#bib-fips-186-5" title="FIPS PUB 186-5: Digital Signature Standard (DSS)">FIPS-186-5</a></cite>]를 준수하는, 즉 규정된 <strong>모든
+</strong> 유효성 검사를 수행하는 Ed25519 서명 라이브러리는 <strong>EUF-CMA</strong>에
+더하여 <strong>SUF-CMA</strong> 속성을 가진다.
           </p>
           <p>
-Reference [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>] achieves the <strong>BS</strong> and
-<strong>SBS</strong> properties along with <strong>SUF-CMA</strong> in their
-"signature verification algorithm 2" where an additional check is
-performed against the public key <em>A</em> to make sure that it is not one of
-eight "small order points". These additional checks incur minimal processing overhead.
+참고문헌 [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>]는 "서명 검증 알고리즘 2"에서
+<strong>SUF-CMA</strong>와 함께 <strong>BS</strong> 및 <strong>SBS</strong> 속성을
+달성하는데, 여기서는 공개키 <em>A</em>가 여덟 개의 "작은 위수의 점(small order
+points)" 중 하나가 아닌지 확인하는 추가 검사를 수행한다. 이러한 추가 검사는
+처리 부담을 거의 늘리지 않는다.
           </p>
           <p>
-Reference [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>] included a set of twelve test vectors
-to test various Ed25519 libraries available at the time of publication. They
-found that a significant portion missed edge cases and hence did not achieve
-<strong>SUF-CMA</strong> (just EUF-CMA), and only two libraries out of sixteen
-achieved all the security properties. Since the time of publication, more
-Ed25519 libraries have been created, and some of the libraries have been updated
-to include all verification checks. Implementers are recommended to test the
-Ed25519 library they are using against the test vectors of [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>].
+참고문헌 [<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>]는 발행 당시 사용 가능하던 여러 Ed25519
+라이브러리를 시험하기 위한 열두 개의 테스트 벡터 집합을 포함하였다. 그 결과
+상당수가 엣지 케이스를 놓쳐 <strong>SUF-CMA</strong>를 달성하지 못했으며(EUF-CMA만
+달성), 열여섯 개 라이브러리 중 두 개만이 모든 보안 속성을 달성한 것으로
+나타났다. 발행 이후 더 많은 Ed25519 라이브러리가 만들어졌고, 일부 라이브러리는
+모든 검증 검사를 포함하도록 갱신되었다. 구현자는 사용 중인 Ed25519 라이브러리를
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-taming_eddsas" title="Taming the many EdDSAs">Taming_EdDSAs</a></cite>]의 테스트 벡터로 시험할 것을 권장한다.
           </p>
         </section>
       </section>
 
     </section>
 
-    <section id="privacy-considerations"><div class="header-wrapper"><h2 id="x5-privacy-considerations"><bdi class="secno">5. </bdi>Privacy Considerations</h2><a class="self-link" href="#privacy-considerations" aria-label="Permalink for Section 5."></a></div>
+    <section id="privacy-considerations"><div class="header-wrapper"><h2 id="x5-privacy-considerations"><bdi class="secno">5. </bdi>프라이버시 고려사항</h2><a class="self-link" href="#privacy-considerations" aria-label="Permalink for Section 5."></a></div>
       
 
       <p class="advisement">
-Before reading this section, readers are urged to familiarize themselves
-with general privacy advice provided in the
+이 절을 읽기 전에, 독자는
 <a href="https://www.w3.org/TR/vc-data-integrity/#privacy-considerations">
-Privacy Considerations section of the Data Integrity specification</a>.
+데이터 무결성 규격의 프라이버시 고려사항 절</a>에서 제공하는 일반적인
+프라이버시 조언을 먼저 숙지할 것을 권한다.
       </p>
 
       <p>
-The following section describes privacy considerations that developers
-implementing this specification should be aware of in order to avoid violating
-privacy assumptions.
+다음 절은 이 규격을 구현하는 개발자가 프라이버시 가정을 위반하지 않기 위해
+알고 있어야 할 프라이버시 고려사항을 기술한다.
       </p>
 
-    <section id="selective-and-unlinkable-disclosure"><div class="header-wrapper"><h3 id="x5-1-selective-and-unlinkable-disclosure"><bdi class="secno">5.1 </bdi>Selective and Unlinkable Disclosure</h3><a class="self-link" href="#selective-and-unlinkable-disclosure" aria-label="Permalink for Section 5.1"></a></div>
+    <section id="selective-and-unlinkable-disclosure"><div class="header-wrapper"><h3 id="x5-1-selective-and-unlinkable-disclosure"><bdi class="secno">5.1 </bdi>선택적 공개와 연결 불가능한 공개</h3><a class="self-link" href="#selective-and-unlinkable-disclosure" aria-label="Permalink for Section 5.1"></a></div>
       
 
       <p>
-The cryptographic suites described in this specification do not support
-<a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-selective-disclosure">selective disclosure</a> or <a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-unlinkable-disclosure">unlinkable disclosure</a>. If
-<a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-selective-disclosure">selective disclosure</a> is a desired feature, readers might find the
-<cite><a data-matched-text="[[[?VC-DI-ECDSA]]]" href="https://www.w3.org/TR/vc-di-ecdsa/">Data Integrity ECDSA Cryptosuites v1.0</a></cite> specification useful. If <a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-unlinkable-disclosure">unlinkable disclosure</a> is of
-interest, the <cite><a data-matched-text="[[[?VC-DI-BBS]]]" href="https://www.w3.org/TR/vc-di-bbs/">Data Integrity BBS Cryptosuites v1.0</a></cite> specification provides an unlinkable digital
-signature mechanism.
+이 규격에서 기술하는 암호 스위트는
+<a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-selective-disclosure">선택적 공개</a>나 <a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-unlinkable-disclosure">연결 불가능한 공개</a>를 지원하지 않는다.
+<a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-selective-disclosure">선택적 공개</a>가 필요한 기능이라면, 독자는
+<cite><a data-matched-text="[[[?VC-DI-ECDSA]]]" href="https://www.w3.org/TR/vc-di-ecdsa/">Data Integrity ECDSA Cryptosuites v1.0</a></cite> 규격이 유용할 수 있다.
+<a data-link-type="dfn" href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-unlinkable-disclosure">연결 불가능한 공개</a>에 관심이 있다면,
+<cite><a data-matched-text="[[[?VC-DI-BBS]]]" href="https://www.w3.org/TR/vc-di-bbs/">Data Integrity BBS Cryptosuites v1.0</a></cite> 규격이 연결 불가능한 디지털 서명
+메커니즘을 제공한다.
       </p>
 
     </section>
     </section>
 
-    <section class="appendix" id="the-ed25519signature2020-suite"><div class="header-wrapper"><h2 id="a-the-ed25519signature2020-suite"><bdi class="secno">A. </bdi>The Ed25519Signature2020 Suite</h2><a class="self-link" href="#the-ed25519signature2020-suite" aria-label="Permalink for Appendix A."></a></div>
+    <section class="appendix" id="the-ed25519signature2020-suite"><div class="header-wrapper"><h2 id="a-the-ed25519signature2020-suite"><bdi class="secno">A. </bdi>Ed25519Signature2020 스위트</h2><a class="self-link" href="#the-ed25519signature2020-suite" aria-label="Permalink for Appendix A."></a></div>
       
 
       <p>
-<code>Ed25519Signature2020</code> is an earlier version of a cryptographic suite
-for use of the EdDSA algorithm and Curve25519. While it has
-been used in production systems, new implementations should instead use
-<a href="#eddsa-rdfc-2022"><code>eddsa-rdfc-2022</code></a>. <code>Ed25519Signature2020</code> has
-been kept in this specification to provide a stable reference.
+<code>Ed25519Signature2020</code>은 EdDSA 알고리즘과 Curve25519를 사용하기 위한
+암호 스위트의 이전 버전이다. 이는 실제 운영 시스템에서 사용되어 왔으나, 새로운
+구현은 대신 <a href="#eddsa-rdfc-2022"><code>eddsa-rdfc-2022</code></a>를 사용해야 한다.
+<code>Ed25519Signature2020</code>은 안정적인 참조를 제공하기 위해 이 규격에 남겨두었다.
       </p>
 
-      <section id="data-model-0"><div class="header-wrapper"><h3 id="a-1-data-model"><bdi class="secno">A.1 </bdi>Data Model</h3><a class="self-link" href="#data-model-0" aria-label="Permalink for Appendix A.1"></a></div>
+      <section id="data-model-0"><div class="header-wrapper"><h3 id="a-1-data-model"><bdi class="secno">A.1 </bdi>데이터 모델</h3><a class="self-link" href="#data-model-0" aria-label="Permalink for Appendix A.1"></a></div>
         
-        <section id="verification-methods-0"><div class="header-wrapper"><h4 id="a-1-1-verification-methods"><bdi class="secno">A.1.1 </bdi>Verification Methods</h4><a class="self-link" href="#verification-methods-0" aria-label="Permalink for Appendix A.1.1"></a></div>
+        <section id="verification-methods-0"><div class="header-wrapper"><h4 id="a-1-1-verification-methods"><bdi class="secno">A.1.1 </bdi>검증 방법</h4><a class="self-link" href="#verification-methods-0" aria-label="Permalink for Appendix A.1.1"></a></div>
           
           <section id="ed25519verificationkey2020"><div class="header-wrapper"><h5 id="a-1-1-1-ed25519verificationkey2020"><bdi class="secno">A.1.1.1 </bdi>Ed25519VerificationKey2020</h5><a class="self-link" href="#ed25519verificationkey2020" aria-label="Permalink for Appendix A.1.1.1"></a></div>
             
 
             <p>
-The key format described in this section is provided to document a legacy
-mechanism that has been deployed to production. The key format described in
-section <a href="#multikey" data-matched-text="[[[#multikey]]]" class="sec-ref"><bdi class="secno">2.1.1 </bdi>Multikey</a> supercedes the one described in this section. New
-applications are strongly urged to use the newer key format.
+이 절에서 기술하는 키 형식은 실제 운영에 배포되어 온 레거시 메커니즘을 문서화하기
+위해 제공된다. <a href="#multikey" data-matched-text="[[[#multikey]]]" class="sec-ref"><bdi class="secno">2.1.1 </bdi>Multikey</a> 절에서 기술하는 키 형식이 이 절에서 기술하는
+형식을 대체한다. 새로운 응용은 더 새로운 키 형식을 사용할 것을 강력히 권한다.
             </p>
 
             <p>
-The <code>type</code> of the verification method <em class="rfc2119">MUST</em> be
-<a href="#ed25519verificationkey2020">Ed25519VerificationKey2020</a>.
+검증 방법의 <code>type</code>은
+<a href="#ed25519verificationkey2020">Ed25519VerificationKey2020</a>이<em class="rfc2119">어야 한다</em>.
             </p>
 
             <p>
-The <code>controller</code> of the verification method <em class="rfc2119">MUST</em> be a URL.
+검증 방법의 <code>controller</code>는 URL이<em class="rfc2119">어야 한다</em>.
             </p>
 
             <p>
-The <code>publicKeyMultibase</code> value of the verification method <em class="rfc2119">MUST</em> start with the
-base-58-btc prefix (<code>z</code>), as defined in the
-<a href="https://www.w3.org/TR/cid-1.0/#multibase-0">Multibase section</a> of
-[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]. A Multibase-encoded Multikey value follows, which <em class="rfc2119">MUST</em>
-consist of a binary value that starts with the two-byte prefix <code>0xed01</code>, which
-is the Multikey header for an Ed25519 public key, followed by the 32-byte
-public key data, all of which is then encoded using base-58-btc. Any other
-encoding <em class="rfc2119">MUST NOT</em> be allowed.
+검증 방법의 <code>publicKeyMultibase</code> 값은
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의
+<a href="https://www.w3.org/TR/cid-1.0/#multibase-0">Multibase 절</a>에 정의된 대로
+base-58-btc 접두사(<code>z</code>)로 시작<em class="rfc2119">해야 한다</em>. 그 뒤에는 Multibase로 인코딩된
+Multikey 값이 오며, 이는 Ed25519 공개키에 대한 Multikey 헤더인 2바이트 접두사
+<code>0xed01</code>로 시작하여 32바이트의 공개키 데이터가 뒤따르는 이진값으로 구성<em class="rfc2119">되어야 하고</em>,
+이 전체를 base-58-btc로 인코딩한다. 그 밖의 어떤 인코딩도 허용<em class="rfc2119">되어서는 안 된다</em>.
             </p>
 
             <p class="advisement">
-Developers are advised to not accidentally publish a representation of a private
-key. Implementations of this specification will raise errors in the event of a
-Multikey header value other than <code>0xed01</code> being used in a
-<code>publicKeyMultibase</code> value.
+개발자는 개인키의 표현을 실수로 게시하지 않도록 주의하는 것이 좋다. 이 규격의
+구현은 <code>publicKeyMultibase</code> 값에 <code>0xed01</code> 이외의 Multikey 헤더 값이 사용되는
+경우 오류를 일으킨다.
             </p>
 
             <div class="example" id="example-an-ed25519-public-key-encoded-as-an-ed25519verificationkey2020">
         <div class="marker">
-    <a class="self-link" href="#example-an-ed25519-public-key-encoded-as-an-ed25519verificationkey2020">예시<bdi> 4</bdi></a><span class="example-title">: An Ed25519 public key encoded as an
-              Ed25519VerificationKey2020</span>
+    <a class="self-link" href="#example-an-ed25519-public-key-encoded-as-an-ed25519verificationkey2020">예시<bdi> 4</bdi></a><span class="example-title">: Ed25519VerificationKey2020으로 인코딩된 Ed25519
+              공개키</span>
   </div> <pre class="nohighlight">{
   "id": "https://example.com/issuer/123#key-0",
   "type": "Ed25519VerificationKey2020",
@@ -2041,8 +2030,8 @@ Multikey header value other than <code>0xed01</code> being used in a
 
             <div class="example" id="example-an-ed25519-public-key-encoded-as-an-ed25519verificationkey2020-in-a-controller-document">
         <div class="marker">
-    <a class="self-link" href="#example-an-ed25519-public-key-encoded-as-an-ed25519verificationkey2020-in-a-controller-document">예시<bdi> 5</bdi></a><span class="example-title">: An Ed25519 public key encoded as an
-              Ed25519VerificationKey2020 in a controller document.</span>
+    <a class="self-link" href="#example-an-ed25519-public-key-encoded-as-an-ed25519verificationkey2020-in-a-controller-document">예시<bdi> 5</bdi></a><span class="example-title">: 제어자 문서 안에서 Ed25519VerificationKey2020으로
+              인코딩된 Ed25519 공개키.</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/did/v1",
@@ -2072,49 +2061,46 @@ Multikey header value other than <code>0xed01</code> being used in a
           </section>
 
         </section>
-        <section id="proof-representations-0"><div class="header-wrapper"><h4 id="a-1-2-proof-representations"><bdi class="secno">A.1.2 </bdi>Proof representations</h4><a class="self-link" href="#proof-representations-0" aria-label="Permalink for Appendix A.1.2"></a></div>
+        <section id="proof-representations-0"><div class="header-wrapper"><h4 id="a-1-2-proof-representations"><bdi class="secno">A.1.2 </bdi>증명 표현</h4><a class="self-link" href="#proof-representations-0" aria-label="Permalink for Appendix A.1.2"></a></div>
           
           <section id="ed25519signature2020"><div class="header-wrapper"><h5 id="a-1-2-1-ed25519signature2020"><bdi class="secno">A.1.2.1 </bdi>Ed25519Signature2020</h5><a class="self-link" href="#ed25519signature2020" aria-label="Permalink for Appendix A.1.2.1"></a></div>
             
 
             <p>
-The proof format described in this section is provided to document a legacy
-mechanism that has been deployed to production. The <code>DataIntegrityProof</code> formats
-described in section <a href="#dataintegrityproof" data-matched-text="[[[#dataintegrityproof]]]" class="sec-ref"><bdi class="secno">2.2.1 </bdi>DataIntegrityProof</a> supercede the one described in
-this section. New applications are strongly urged to use the newer proof format.
+이 절에서 기술하는 증명 형식은 실제 운영에 배포되어 온 레거시 메커니즘을 문서화하기
+위해 제공된다. <a href="#dataintegrityproof" data-matched-text="[[[#dataintegrityproof]]]" class="sec-ref"><bdi class="secno">2.2.1 </bdi>DataIntegrityProof</a> 절에서 기술하는
+<code>DataIntegrityProof</code> 형식이 이 절에서 기술하는 형식을 대체한다. 새로운 응용은
+더 새로운 증명 형식을 사용할 것을 강력히 권한다.
             </p>
 
             <p>
-The <code>verificationMethod</code> property of the proof <em class="rfc2119">MUST</em> be a URL.
-Dereferencing the <code>verificationMethod</code> <em class="rfc2119">MUST</em> result in an object
-containing a <code>type</code> property with the value set to
-<code>Ed25519VerificationKey2020</code>.
+증명의 <code>verificationMethod</code> 속성은 URL이<em class="rfc2119">어야 한다</em>.
+<code>verificationMethod</code>를 역참조하면 값이 <code>Ed25519VerificationKey2020</code>으로
+설정된 <code>type</code> 속성을 담은 객체가 나<em class="rfc2119">와야 한다</em>.
             </p>
 
             <p>
-The <code>type</code> property of the proof <em class="rfc2119">MUST</em> be <code>Ed25519Signature2020</code>.
+증명의 <code>type</code> 속성은 <code>Ed25519Signature2020</code>이<em class="rfc2119">어야 한다</em>.
             </p>
             <p>
-The <code>created</code> property of the proof <em class="rfc2119">MUST</em> be an [<cite><a class="bibref" data-link-type="biblio" href="#bib-xmlschema11-2" title="W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes">XMLSCHEMA11-2</a></cite>]
-formatted date string.
+증명의 <code>created</code> 속성은 [<cite><a class="bibref" data-link-type="biblio" href="#bib-xmlschema11-2" title="W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes">XMLSCHEMA11-2</a></cite>] 형식의
+날짜 문자열이<em class="rfc2119">어야 한다</em>.
             </p>
             <p>
-The <code>proofPurpose</code> property of the proof <em class="rfc2119">MUST</em> be a string, and <em class="rfc2119">MUST</em>
-match the verification relationship expressed by the verification method
-<code>controller</code>.
+증명의 <code>proofPurpose</code> 속성은 문자열이<em class="rfc2119">어야 하며</em>, 검증 방법의
+<code>controller</code>가 표현하는 검증 관계와 일치<em class="rfc2119">해야 한다</em>.
             </p>
             <p>
-The <code>proofValue</code> property of the proof <em class="rfc2119">MUST</em> be a detached EdDSA
-produced according to [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8032" title="Edwards-Curve Digital Signature Algorithm (EdDSA)">RFC8032</a></cite>], encoded using
-the base-58-btc header and alphabet as described in the
+증명의 <code>proofValue</code> 속성은 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8032" title="Edwards-Curve Digital Signature Algorithm (EdDSA)">RFC8032</a></cite>]에 따라 생성된 분리형(detached)
+EdDSA여<em class="rfc2119">야 하며</em>, [<cite><a class="bibref" data-link-type="biblio" href="#bib-cid" title="Controlled Identifiers v1.0">CID</a></cite>]의
 <a href="https://www.w3.org/TR/cid-1.0/#multibase-0">
-Multibase section</a> of [<cite><a class="bibref" data-link-type="biblio" href="#bib-cid" title="Controlled Identifiers v1.0">CID</a></cite>].
+Multibase 절</a>에서 기술하는 base-58-btc 헤더와 알파벳을 사용하여 인코딩한다.
             </p>
 
             <div class="example" id="example-an-ed25519-digital-signature-expressed-as-a-ed25519signature2020">
         <div class="marker">
-    <a class="self-link" href="#example-an-ed25519-digital-signature-expressed-as-a-ed25519signature2020">예시<bdi> 6</bdi></a><span class="example-title">: An Ed25519 digital signature expressed as a
-              Ed25519Signature2020</span>
+    <a class="self-link" href="#example-an-ed25519-digital-signature-expressed-as-a-ed25519signature2020">예시<bdi> 6</bdi></a><span class="example-title">: Ed25519Signature2020으로 표현된 Ed25519 디지털
+              서명</span>
   </div> <pre class="nohighlight">{
   "@context": [
     {"myWebsite": "https://vocabulary.example/myWebsite"},
@@ -2136,68 +2122,63 @@ Multibase section</a> of [<cite><a class="bibref" data-link-type="biblio" href="
         </section>
       </section>
 
-      <section id="algorithms-0"><div class="header-wrapper"><h3 id="a-2-algorithms"><bdi class="secno">A.2 </bdi>Algorithms</h3><a class="self-link" href="#algorithms-0" aria-label="Permalink for Appendix A.2"></a></div>
+      <section id="algorithms-0"><div class="header-wrapper"><h3 id="a-2-algorithms"><bdi class="secno">A.2 </bdi>알고리즘</h3><a class="self-link" href="#algorithms-0" aria-label="Permalink for Appendix A.2"></a></div>
         
         <section id="ed25519signature2020-0"><div class="header-wrapper"><h4 id="a-2-1-ed25519signature2020"><bdi class="secno">A.2.1 </bdi>Ed25519Signature2020</h4><a class="self-link" href="#ed25519signature2020-0" aria-label="Permalink for Appendix A.2.1"></a></div>
           
 
           <p>
-The <code>Ed25519Signature2020</code> cryptographic suite takes an input document,
-canonicalizes the document using the RDF Dataset Canonicalization algorithm [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf-canon" title="RDF Dataset Canonicalization">RDF-CANON</a></cite>],
-and then cryptographically hashes and signs the output
-resulting in the production of a data integrity proof. The algorithms in this
-section also include the verification of such a data integrity proof.
+<code>Ed25519Signature2020</code> 암호 스위트는 입력 문서를 받아, RDF 데이터셋
+정규화 알고리즘 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf-canon" title="RDF Dataset Canonicalization">RDF-CANON</a></cite>]을 사용하여 문서를 정규화한 뒤, 그 출력을
+암호학적으로 해싱하고 서명하여 데이터 무결성 증명을 생성한다. 이 절의 알고리즘은
+그러한 데이터 무결성 증명의 검증도 포함한다.
           </p>
 
-          <section id="add-proof-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-1-add-proof-ed25519signature2020"><bdi class="secno">A.2.1.1 </bdi>Add Proof (Ed25519Signature2020)</h5><a class="self-link" href="#add-proof-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.1"></a></div>
+          <section id="add-proof-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-1-add-proof-ed25519signature2020"><bdi class="secno">A.2.1.1 </bdi>증명 추가(Ed25519Signature2020)</h5><a class="self-link" href="#add-proof-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.1"></a></div>
             
 
             <p>
-To generate a proof, the algorithm in
+증명을 생성하려면, 데이터 무결성 [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>] 규격의
 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof">
-Section 4.1: Add Proof</a> in the Data Integrity
-[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>] specification <em class="rfc2119">MUST</em> be executed.
-For that algorithm, the cryptographic suite specific
+4.1절: 증명 추가</a>에 있는 알고리즘을 실행<em class="rfc2119">해야 한다</em>.
+그 알고리즘에서, 암호 스위트별
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-transformation-algorithm">
-transformation algorithm</a> is defined in Section
-<a href="#transformation-ed25519signature2020" data-matched-text="[[[#transformation-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.3 </bdi>Transformation (Ed25519Signature2020)</a>, the
+변환 알고리즘</a>은
+<a href="#transformation-ed25519signature2020" data-matched-text="[[[#transformation-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.3 </bdi>변환(Ed25519Signature2020)</a> 절에,
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-hashing-algorithm">
-hashing algorithm</a> is defined in Section
-<a href="#hashing-ed25519signature2020" data-matched-text="[[[#hashing-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.4 </bdi>Hashing (Ed25519Signature2020)</a>, and the
+해싱 알고리즘</a>은
+<a href="#hashing-ed25519signature2020" data-matched-text="[[[#hashing-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.4 </bdi>해싱(Ed25519Signature2020)</a> 절에,
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-proof-serialization-algorithm">
-proof serialization algorithm</a> is defined in Section
-<a href="#proof-serialization-ed25519signature2020" data-matched-text="[[[#proof-serialization-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.6 </bdi>Proof Serialization (Ed25519Signature2020)</a>.
+증명 직렬화 알고리즘</a>은
+<a href="#proof-serialization-ed25519signature2020" data-matched-text="[[[#proof-serialization-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.6 </bdi>증명 직렬화(Ed25519Signature2020)</a> 절에 정의되어 있다.
             </p>
           </section>
 
-          <section id="verify-proof-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-2-verify-proof-ed25519signature2020"><bdi class="secno">A.2.1.2 </bdi>Verify Proof (Ed25519Signature2020)</h5><a class="self-link" href="#verify-proof-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.2"></a></div>
+          <section id="verify-proof-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-2-verify-proof-ed25519signature2020"><bdi class="secno">A.2.1.2 </bdi>증명 검증(Ed25519Signature2020)</h5><a class="self-link" href="#verify-proof-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.2"></a></div>
             
 
             <p>
-To verify a proof, the algorithm in
+증명을 검증하려면, 데이터 무결성 [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>] 규격의
 <a href="https://www.w3.org/TR/vc-data-integrity/#verify-proof">
-Section 4.2: Verify Proof</a> in the Data Integrity
-[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>] specification <em class="rfc2119">MUST</em> be executed.
-For that algorithm, the cryptographic suite specific
+4.2절: 증명 검증</a>에 있는 알고리즘을 실행<em class="rfc2119">해야 한다</em>.
+그 알고리즘에서, 암호 스위트별
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-transformation-algorithm">
-transformation algorithm</a> is defined in Section
-<a href="#transformation-ed25519signature2020" data-matched-text="[[[#transformation-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.3 </bdi>Transformation (Ed25519Signature2020)</a>, the
+변환 알고리즘</a>은
+<a href="#transformation-ed25519signature2020" data-matched-text="[[[#transformation-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.3 </bdi>변환(Ed25519Signature2020)</a> 절에,
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-hashing-algorithm">
-hashing algorithm</a> is defined in Section <a href="#hashing-ed25519signature2020" data-matched-text="[[[#hashing-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.4 </bdi>Hashing (Ed25519Signature2020)</a>,
-and the
+해싱 알고리즘</a>은 <a href="#hashing-ed25519signature2020" data-matched-text="[[[#hashing-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.4 </bdi>해싱(Ed25519Signature2020)</a> 절에,
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-proof-serialization-algorithm">
-proof verification algorithm</a> is defined in Section
-<a href="#proof-verification-ed25519signature2020" data-matched-text="[[[#proof-verification-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.7 </bdi>Proof Verification (Ed25519Signature2020)</a>.
+증명 확인 알고리즘</a>은
+<a href="#proof-verification-ed25519signature2020" data-matched-text="[[[#proof-verification-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.7 </bdi>증명 확인(Ed25519Signature2020)</a> 절에 정의되어 있다.
             </p>
           </section>
 
-          <section id="transformation-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-3-transformation-ed25519signature2020"><bdi class="secno">A.2.1.3 </bdi>Transformation (Ed25519Signature2020)</h5><a class="self-link" href="#transformation-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.3"></a></div>
+          <section id="transformation-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-3-transformation-ed25519signature2020"><bdi class="secno">A.2.1.3 </bdi>변환(Ed25519Signature2020)</h5><a class="self-link" href="#transformation-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.3"></a></div>
             
 
             <p>
-The following algorithm specifies how to transform an unsecured input document
-into a transformed document that is ready to be provided as input to the
-hashing algorithm in Section <a href="#hashing-ed25519signature2020" data-matched-text="[[[#hashing-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.4 </bdi>Hashing (Ed25519Signature2020)</a>.
+다음 알고리즘은 비보안 입력 문서를 <a href="#hashing-ed25519signature2020" data-matched-text="[[[#hashing-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.4 </bdi>해싱(Ed25519Signature2020)</a> 절의
+해싱 알고리즘에 입력으로 제공될 준비가 된 변환된 문서로 변환하는 방법을 지정한다.
             </p>
 
             <p>
@@ -2211,18 +2192,19 @@ hashing algorithm in Section <a href="#hashing-ed25519signature2020" data-matche
 
             <ol class="algorithm">
               <li>
-If <code>options</code>.<code>type</code> is not set to the string
-<code>Ed25519Signature2020</code>,
-an error <em class="rfc2119">MUST</em> be raised that <em class="rfc2119">SHOULD</em> convey an error type of
-<a href="https://www.w3.org/TR/vc-data-integrity/#PROOF_TRANSFORMATION_ERROR">PROOF_TRANSFORMATION_ERROR</a>.
+<code>options</code>.<code>type</code>이 문자열 <code>Ed25519Signature2020</code>으로
+설정되어 있지 않으면, 오류를 일으<em class="rfc2119">켜야 하며</em>
+<a href="https://www.w3.org/TR/vc-data-integrity/#PROOF_TRANSFORMATION_ERROR">PROOF_TRANSFORMATION_ERROR</a>
+오류 유형을 전달하<em class="rfc2119">는 것이 좋다</em>.
               </li>
               <li>
-Let <var>canonicalDocument</var> be the result of converting <var>unsecuredDocument</var> to
-<a href="https://www.w3.org/TR/json-ld11-api/#expansion-algorithm">JSON-LD expanded form</a>
-and then <a href="https://www.w3.org/TR/json-ld11-api/#deserialize-json-ld-to-rdf-algorithm">
-to RDF statements</a>, applying the <a href="https://www.w3.org/TR/rdf-canon/#canon-algorithm">
-Universal RDF Dataset Canonicalization Algorithm</a>, and then serializing the result to a
-<a href="https://www.w3.org/TR/rdf-canon/#dfn-serialized-canonical-form">serialized canonical form</a>.
+<var>canonicalDocument</var>를 <var>unsecuredDocument</var>를
+<a href="https://www.w3.org/TR/json-ld11-api/#expansion-algorithm">JSON-LD 확장형</a>으로
+변환한 뒤 <a href="https://www.w3.org/TR/json-ld11-api/#deserialize-json-ld-to-rdf-algorithm">
+RDF 문장으로</a> 변환하고, <a href="https://www.w3.org/TR/rdf-canon/#canon-algorithm">
+범용 RDF 데이터셋 정규화 알고리즘</a>을 적용한 다음, 그 결과를
+<a href="https://www.w3.org/TR/rdf-canon/#dfn-serialized-canonical-form">직렬화된 정규형</a>으로
+직렬화한 결과로 둔다.
               </li>
               <li>
 <code>canonicalDocument</code>를 <em>변환된 데이터 문서</em>로 반환한다.
@@ -2231,26 +2213,24 @@ Universal RDF Dataset Canonicalization Algorithm</a>, and then serializing the r
 
           </section>
 
-          <section id="hashing-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-4-hashing-ed25519signature2020"><bdi class="secno">A.2.1.4 </bdi>Hashing (Ed25519Signature2020)</h5><a class="self-link" href="#hashing-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.4"></a></div>
+          <section id="hashing-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-4-hashing-ed25519signature2020"><bdi class="secno">A.2.1.4 </bdi>해싱(Ed25519Signature2020)</h5><a class="self-link" href="#hashing-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.4"></a></div>
             
 
             <p>
-The following algorithm specifies how to cryptographically hash a
-<em>transformed data document</em> and <em>proof configuration</em>
-into cryptographic hash data that is ready to be provided as input to the
-algorithms in Section <a href="#proof-serialization-ed25519signature2020" data-matched-text="[[[#proof-serialization-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.6 </bdi>Proof Serialization (Ed25519Signature2020)</a> or
-Section <a href="#proof-verification-ed25519signature2020" data-matched-text="[[[#proof-verification-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.7 </bdi>Proof Verification (Ed25519Signature2020)</a>.
+다음 알고리즘은 <em>변환된 데이터 문서</em>와 <em>증명 구성</em>을,
+<a href="#proof-serialization-ed25519signature2020" data-matched-text="[[[#proof-serialization-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.6 </bdi>증명 직렬화(Ed25519Signature2020)</a> 절 또는
+<a href="#proof-verification-ed25519signature2020" data-matched-text="[[[#proof-verification-ed25519signature2020]]]" class="sec-ref"><bdi class="secno">A.2.1.7 </bdi>증명 확인(Ed25519Signature2020)</a> 절의
+알고리즘에 입력으로 제공될 준비가 된 암호 해시 데이터로 암호학적으로 해싱하는
+방법을 지정한다.
             </p>
 
             <p>
-The required inputs to this algorithm are a
-<em>transformed data document</em> (<code>transformedDocument</code>) and
-<em>proof configuration</em> (<code>proofConfig</code>). The
-<em>proof configuration</em> <em class="rfc2119">MUST</em> contain a type identifier for the
+이 알고리즘에 필요한 입력은 <em>변환된 데이터 문서</em>(<code>transformedDocument</code>)와
+<em>증명 구성</em>(<code>proofConfig</code>)이다. <em>증명 구성</em>은
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite">
-cryptographic suite</a> (<code>type</code>) and <em class="rfc2119">MAY</em> contain a cryptosuite
-identifier (<code>cryptosuite</code>). A single <em>hash data</em> value
-represented as series of bytes is produced as output.
+암호 스위트</a>에 대한 타입 식별자(<code>type</code>)를 포함<em class="rfc2119">해야 하고</em> 암호 스위트
+식별자(<code>cryptosuite</code>)를 포함할 수 <em class="rfc2119">있다</em>. 바이트 열로 표현되는 단일 <em>해시 데이터</em>
+값이 출력으로 생성된다.
             </p>
 
             <ol class="algorithm">
@@ -2276,23 +2256,20 @@ SHA-2) 암호 해싱 알고리즘 [<cite><a class="bibref" data-link-type="bibli
 
           </section>
 
-          <section id="proof-configuration-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-5-proof-configuration-ed25519signature2020"><bdi class="secno">A.2.1.5 </bdi>Proof Configuration (Ed25519Signature2020)</h5><a class="self-link" href="#proof-configuration-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.5"></a></div>
+          <section id="proof-configuration-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-5-proof-configuration-ed25519signature2020"><bdi class="secno">A.2.1.5 </bdi>증명 구성(Ed25519Signature2020)</h5><a class="self-link" href="#proof-configuration-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.5"></a></div>
             
 
             <p>
-The following algorithm specifies how to generate a
-<em>proof configuration</em> from a set of <em>proof options</em>
-that is used as input to the <a href="#hashing-ed25519signature2020">proof hashing algorithm</a>.
+다음 알고리즘은 <a href="#hashing-ed25519signature2020">증명 해싱 알고리즘</a>에 입력으로
+사용되는 <em>증명 구성</em>을 <em>증명 옵션</em> 집합으로부터 생성하는 방법을 지정한다.
             </p>
 
             <p>
-The required inputs to this algorithm are <em>proof options</em>
-(<code>options</code>). The <em>proof options</em> <em class="rfc2119">MUST</em> contain a type identifier
-for the
+이 알고리즘에 필요한 입력은 <em>증명 옵션</em>(<code>options</code>)이다. <em>증명 옵션</em>은
 <a href="https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite">
-cryptographic suite</a> (<code>type</code>) and <em class="rfc2119">MAY</em> contain a cryptosuite
-identifier (<code>cryptosuite</code>). A <em>proof configuration</em>
-object is produced as output.
+암호 스위트</a>에 대한 타입 식별자(<code>type</code>)를 포함<em class="rfc2119">해야 하고</em> 암호 스위트
+식별자(<code>cryptosuite</code>)를 포함할 수 <em class="rfc2119">있다</em>. <em>증명 구성</em>
+객체가 출력으로 생성된다.
             </p>
 
             <ol class="algorithm">
@@ -2300,9 +2277,10 @@ object is produced as output.
 <var>proofConfig</var>를 <var>options</var> 객체의 복제본으로 둔다.
               </li>
               <li>
-If <code>proofConfig</code>.<code>type</code> is not set to <code>Ed25519Signature2020</code>,
-an error <em class="rfc2119">MUST</em> be raised and <em class="rfc2119">SHOULD</em> convey an error type of
-<a href="https://www.w3.org/TR/vc-data-integrity/#PROOF_GENERATION_ERROR">PROOF_GENERATION_ERROR</a>.
+<code>proofConfig</code>.<code>type</code>이 <code>Ed25519Signature2020</code>으로 설정되어 있지 않으면,
+오류를 일으<em class="rfc2119">켜야 하며</em>
+<a href="https://www.w3.org/TR/vc-data-integrity/#PROOF_GENERATION_ERROR">PROOF_GENERATION_ERROR</a>
+오류 유형을 전달하<em class="rfc2119">는 것이 좋다</em>.
               </li>
               <li>
 <var>proofConfig</var>.<var>created</var>가 존재하고 유효한 [<cite><a class="bibref" data-link-type="biblio" href="#bib-xmlschema11-2" title="W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes">XMLSCHEMA11-2</a></cite>]
@@ -2311,12 +2289,12 @@ an error <em class="rfc2119">MUST</em> be raised and <em class="rfc2119">SHOULD<
 오류 유형을 전달하<em class="rfc2119">는 것이 좋다</em>.
               </li>
               <li>
-Set <code>proofConfig</code>.<var>@context</var> to
-<code>unsecuredDocument</code>.<var>@context</var>
+<code>proofConfig</code>.<var>@context</var>를
+<code>unsecuredDocument</code>.<var>@context</var>로 설정한다.
               </li>
               <li>
-Let <code>canonicalProofConfig</code> be the result of applying the
-RDF Dataset Canonicalization algorithm [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf-canon" title="RDF Dataset Canonicalization">RDF-CANON</a></cite>] to the <code>proofConfig</code>.
+<code>canonicalProofConfig</code>를 <code>proofConfig</code>에 RDF 데이터셋 정규화 알고리즘
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf-canon" title="RDF Dataset Canonicalization">RDF-CANON</a></cite>]을 적용한 결과로 둔다.
               </li>
               <li>
 <code>canonicalProofConfig</code>를 반환한다.
@@ -2325,7 +2303,7 @@ RDF Dataset Canonicalization algorithm [<cite><a class="bibref" data-link-type="
 
           </section>
 
-          <section id="proof-serialization-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-6-proof-serialization-ed25519signature2020"><bdi class="secno">A.2.1.6 </bdi>Proof Serialization (Ed25519Signature2020)</h5><a class="self-link" href="#proof-serialization-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.6"></a></div>
+          <section id="proof-serialization-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-6-proof-serialization-ed25519signature2020"><bdi class="secno">A.2.1.6 </bdi>증명 직렬화(Ed25519Signature2020)</h5><a class="self-link" href="#proof-serialization-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.6"></a></div>
             
 
             <p>
@@ -2359,7 +2337,7 @@ RDF Dataset Canonicalization algorithm [<cite><a class="bibref" data-link-type="
 
           </section>
 
-          <section id="proof-verification-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-7-proof-verification-ed25519signature2020"><bdi class="secno">A.2.1.7 </bdi>Proof Verification (Ed25519Signature2020)</h5><a class="self-link" href="#proof-verification-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.7"></a></div>
+          <section id="proof-verification-ed25519signature2020"><div class="header-wrapper"><h5 id="a-2-1-7-proof-verification-ed25519signature2020"><bdi class="secno">A.2.1.7 </bdi>증명 확인(Ed25519Signature2020)</h5><a class="self-link" href="#proof-verification-ed25519signature2020" aria-label="Permalink for Appendix A.2.1.7"></a></div>
             
 
             <p>
@@ -2373,11 +2351,10 @@ RDF Dataset Canonicalization algorithm [<cite><a class="bibref" data-link-type="
 
             <ol class="algorithm">
               <li>
-Let <var>publicKeyBytes</var> be the result of retrieving the
-public key bytes associated with the
-<var>options</var>.<var>verificationMethod</var> value as described in the
-<a href="https://www.w3.org/TR/cid-1.0/#retrieve-verification-method">Retrieve
-Verification Method</a> section of the <cite><a data-matched-text="[[[CID]]]" href="https://www.w3.org/TR/cid-1.0/">Controlled Identifiers v1.0</a></cite> specification.
+<var>publicKeyBytes</var>를, <cite><a data-matched-text="[[[CID]]]" href="https://www.w3.org/TR/cid-1.0/">Controlled Identifiers v1.0</a></cite> 규격의
+<a href="https://www.w3.org/TR/cid-1.0/#retrieve-verification-method">검증 방법
+조회</a> 절에서 기술한 대로 <var>options</var>.<var>verificationMethod</var> 값에 연관된
+공개키 바이트를 조회한 결과로 둔다.
               </li>
               <li>
 <code>verificationResult</code>를, <code>publicKeyBytes</code>가 지정하는 공개키를 사용하여
@@ -2396,19 +2373,17 @@ EdDSA)을 사용하는 에드워즈 곡선 디지털 서명 알고리즘(EdDSA)
     </section>
 
 
-    <section class="appendix informative" id="test-vectors"><div class="header-wrapper"><h2 id="b-test-vectors"><bdi class="secno">B. </bdi>Test Vectors</h2><a class="self-link" href="#test-vectors" aria-label="Permalink for Appendix B."></a></div><p><em>이 부분은 비규범적입니다.</em></p>
+    <section class="appendix informative" id="test-vectors"><div class="header-wrapper"><h2 id="b-test-vectors"><bdi class="secno">B. </bdi>테스트 벡터</h2><a class="self-link" href="#test-vectors" aria-label="Permalink for Appendix B."></a></div><p><em>이 부분은 비규범적입니다.</em></p>
       
-      <section id="representation-eddsa-rdfc-2022"><div class="header-wrapper"><h3 id="b-1-representation-eddsa-rdfc-2022"><bdi class="secno">B.1 </bdi>Representation: eddsa-rdfc-2022</h3><a class="self-link" href="#representation-eddsa-rdfc-2022" aria-label="Permalink for Appendix B.1"></a></div>
+      <section id="representation-eddsa-rdfc-2022"><div class="header-wrapper"><h3 id="b-1-representation-eddsa-rdfc-2022"><bdi class="secno">B.1 </bdi>표현: eddsa-rdfc-2022</h3><a class="self-link" href="#representation-eddsa-rdfc-2022" aria-label="Permalink for Appendix B.1"></a></div>
         
         <p>
-The signer needs to generate a private/public key pair with the private key used
-for signing and the public key made available for verification. The
-representation of the public key and the representation of the private key
-are shown below.
+서명자는 서명에 사용할 개인키와 검증에 사용할 수 있도록 공개할 공개키로 이루어진
+개인키/공개키 쌍을 생성해야 한다. 공개키의 표현과 개인키의 표현을 아래에 나타낸다.
         </p>
         <div class="example" id="example-private-and-public-keys-for-signature">
         <div class="marker">
-    <a class="self-link" href="#example-private-and-public-keys-for-signature">예시<bdi> 7</bdi></a><span class="example-title">: Private and Public keys for Signature</span>
+    <a class="self-link" href="#example-private-and-public-keys-for-signature">예시<bdi> 7</bdi></a><span class="example-title">: 서명을 위한 개인키와 공개키</span>
   </div> <pre class="nohighlight">{
     publicKeyMultibase: "z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2",
     secretKeyMultibase: "z3u2en7t5LR2WtQH5PfFqMqwVHBeXouLzo6haApm8XHqvjxq"
@@ -2416,13 +2391,13 @@ are shown below.
       </div>
 
         <p>
-Signing begins with a credential without an attached proof, which is converted
-to canonical form, and then hashed, as shown in the following three examples.
+서명은 증명이 부착되지 않은 크리덴셜에서 시작하며, 이를 정규 형식으로 변환한 뒤
+해싱한다. 다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-credential-without-proof">
         <div class="marker">
-    <a class="self-link" href="#example-credential-without-proof">예시<bdi> 8</bdi></a><span class="example-title">: Credential without Proof</span>
+    <a class="self-link" href="#example-credential-without-proof">예시<bdi> 8</bdi></a><span class="example-title">: 증명이 없는 크리덴셜</span>
   </div> <pre class="nohighlight">{
     "@context": [
         "https://www.w3.org/ns/credentials/v2",
@@ -2443,7 +2418,7 @@ to canonical form, and then hashed, as shown in the following three examples.
 
         <div class="example" id="example-canonical-credential-without-proof">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-credential-without-proof">예시<bdi> 9</bdi></a><span class="example-title">: Canonical Credential without Proof</span>
+    <a class="self-link" href="#example-canonical-credential-without-proof">예시<bdi> 9</bdi></a><span class="example-title">: 정규 형식의 증명 없는 크리덴셜</span>
   </div> <pre class="nohighlight">&lt;did:example:abcdefgh&gt; &lt;https://www.w3.org/ns/credentials/examples#alumniOf&gt; "The School of Examples" .
 &lt;urn:uuid:58172aac-d8ba-11ed-83dd-0b3aef56cc33&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://www.w3.org/2018/credentials#VerifiableCredential&gt; .
 &lt;urn:uuid:58172aac-d8ba-11ed-83dd-0b3aef56cc33&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://www.w3.org/ns/credentials/examples#AlumniCredential&gt; .
@@ -2457,18 +2432,18 @@ to canonical form, and then hashed, as shown in the following three examples.
 
         <div class="example" id="example-hash-of-canonical-credential-without-proof-hex">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-credential-without-proof-hex">예시<bdi> 10</bdi></a><span class="example-title">: Hash of Canonical Credential without Proof (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-credential-without-proof-hex">예시<bdi> 10</bdi></a><span class="example-title">: 정규 형식의 증명 없는 크리덴셜의 해시(hex)</span>
   </div> <pre class="nohighlight">517744132ae165a5349155bef0bb0cf2258fff99dfe1dbd914b938d775a36017</pre>
       </div>
 
         <p>
-The next step is to take the proof options document, convert it to canonical form,
-and obtain its hash, as shown in the next three examples.
+다음 단계는 증명 옵션 문서를 가져와 정규 형식으로 변환하고 그 해시를 얻는 것이며,
+다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-proof-options-document">
         <div class="marker">
-    <a class="self-link" href="#example-proof-options-document">예시<bdi> 11</bdi></a><span class="example-title">: Proof Options Document</span>
+    <a class="self-link" href="#example-proof-options-document">예시<bdi> 11</bdi></a><span class="example-title">: 증명 옵션 문서</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "cryptosuite": "eddsa-rdfc-2022",
@@ -2484,7 +2459,7 @@ and obtain its hash, as shown in the next three examples.
 
         <div class="example" id="example-canonical-proof-options-document">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-proof-options-document">예시<bdi> 12</bdi></a><span class="example-title">: Canonical Proof Options Document</span>
+    <a class="self-link" href="#example-canonical-proof-options-document">예시<bdi> 12</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서</span>
   </div> <pre class="nohighlight">_:c14n0 &lt;http://purl.org/dc/terms/created&gt; "2023-02-24T23:36:38Z"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt; .
 _:c14n0 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://w3id.org/security#DataIntegrityProof&gt; .
 _:c14n0 &lt;https://w3id.org/security#cryptosuite&gt; "eddsa-rdfc-2022"^^&lt;https://w3id.org/security#cryptosuiteString&gt; .
@@ -2494,48 +2469,48 @@ _:c14n0 &lt;https://w3id.org/security#verificationMethod&gt; &lt;did:key:z6MkrJV
 
         <div class="example" id="example-hash-of-canonical-proof-options-document-hex">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex">예시<bdi> 13</bdi></a><span class="example-title">: Hash of Canonical Proof Options Document (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex">예시<bdi> 13</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서의 해시(hex)</span>
   </div> <pre class="nohighlight">bea7b7acfbad0126b135104024a5f1733e705108f42d59668b05c0c50004c6b0</pre>
       </div>
 
         <p>
-Finally, we concatenate the hash of the proof options followed by the hash of the credential without proof, use the private key with the combined hash to
-compute the Ed25519 signature, and then base58-btc encode the signature.
+마지막으로, 증명 옵션의 해시 뒤에 증명 없는 크리덴셜의 해시를 이어 붙이고, 그
+결합된 해시에 개인키를 사용하여 Ed25519 서명을 계산한 다음, 그 서명을 base58-btc로
+인코딩한다.
         </p>
 
         <div class="example" id="example-combine-hashes-of-proof-options-and-credential-hex">
         <div class="marker">
-    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex">예시<bdi> 14</bdi></a><span class="example-title">: Combine hashes of Proof Options and Credential (hex)</span>
+    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex">예시<bdi> 14</bdi></a><span class="example-title">: 증명 옵션과 크리덴셜의 해시 결합(hex)</span>
   </div> <pre class="nohighlight">bea7b7acfbad0126b135104024a5f1733e705108f42d59668b05c0c50004c6b0517744132ae165a5349155bef0bb0cf2258fff99dfe1dbd914b938d775a36017</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-hex">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-hex">예시<bdi> 15</bdi></a><span class="example-title">: Signature of Combined Hashes (hex)</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-hex">예시<bdi> 15</bdi></a><span class="example-title">: 결합된 해시의 서명(hex)</span>
   </div> <pre class="nohighlight">4d8e53c2d5b3f2a7891753eb16ca993325bdb0d3cfc5be1093d0a18426f5ef8578cadc0fd4b5f4dd0d1ce0aefd15ab120b7a894d0eb094ffda4e6553cd1ed50d</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-base58-btc">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc">예시<bdi> 16</bdi></a><span class="example-title">: Signature of Combined Hashes base58-btc</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc">예시<bdi> 16</bdi></a><span class="example-title">: 결합된 해시의 서명 base58-btc</span>
   </div> <pre class="nohighlight">z2YwC8z3ap7yx1nZYCg4L3j3ApHsF8kgPdSb5xoS1VR7vPG3F561B52hYnQF9iseabecm3ijx4K1FBTQsCZahKZme</pre>
       </div>
 
-        <p>Assemble the signed credential with the following two steps:</p>
+        <p>다음 두 단계로 서명된 크리덴셜을 조립한다:</p>
         <ol>
           <li>
-Add the <code>proofValue</code> field with the previously computed base58-btc
-value to the proof options document.
+앞서 계산한 base58-btc 값을 담은 <code>proofValue</code> 필드를 증명 옵션 문서에
+추가한다.
           </li>
           <li>
-Set the <code>proof</code> field of the credential to the augmented proof
-option document.
+크리덴셜의 <code>proof</code> 필드를 그 보강된 증명 옵션 문서로 설정한다.
           </li>
         </ol>
 
         <div class="example" id="example-signed-credential">
         <div class="marker">
-    <a class="self-link" href="#example-signed-credential">예시<bdi> 17</bdi></a><span class="example-title">: Signed Credential</span>
+    <a class="self-link" href="#example-signed-credential">예시<bdi> 17</bdi></a><span class="example-title">: 서명된 크리덴셜</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -2565,17 +2540,16 @@ option document.
 }</pre>
       </div>
       </section>
-      <section id="enhanced-example-for-representation-eddsa-rdfc-2022"><div class="header-wrapper"><h3 id="b-2-enhanced-example-for-representation-eddsa-rdfc-2022"><bdi class="secno">B.2 </bdi>Enhanced Example for Representation: eddsa-rdfc-2022</h3><a class="self-link" href="#enhanced-example-for-representation-eddsa-rdfc-2022" aria-label="Permalink for Appendix B.2"></a></div>
+      <section id="enhanced-example-for-representation-eddsa-rdfc-2022"><div class="header-wrapper"><h3 id="b-2-enhanced-example-for-representation-eddsa-rdfc-2022"><bdi class="secno">B.2 </bdi>표현에 대한 확장 예시: eddsa-rdfc-2022</h3><a class="self-link" href="#enhanced-example-for-representation-eddsa-rdfc-2022" aria-label="Permalink for Appendix B.2"></a></div>
         
         <p>
-Here we again go through the steps of creating a credential signed with
-<code>eddsa-rdfc-2022</code>, but with a more complicated input document. The
-representation of the public key and the representation of the private key
-are shown below.
+여기서는 <code>eddsa-rdfc-2022</code>로 서명된 크리덴셜을 생성하는 단계를 다시
+살펴보되, 더 복잡한 입력 문서를 사용한다. 공개키의 표현과 개인키의 표현을 아래에
+나타낸다.
         </p>
         <div class="example" id="example-private-and-public-keys-for-signature-0">
         <div class="marker">
-    <a class="self-link" href="#example-private-and-public-keys-for-signature-0">예시<bdi> 18</bdi></a><span class="example-title">: Private and Public keys for Signature</span>
+    <a class="self-link" href="#example-private-and-public-keys-for-signature-0">예시<bdi> 18</bdi></a><span class="example-title">: 서명을 위한 개인키와 공개키</span>
   </div> <pre class="nohighlight">{
     publicKeyMultibase: "z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2",
     secretKeyMultibase: "z3u2en7t5LR2WtQH5PfFqMqwVHBeXouLzo6haApm8XHqvjxq"
@@ -2583,13 +2557,13 @@ are shown below.
       </div>
 
         <p>
-Signing begins with a credential without an attached proof, which is converted
-to canonical form, and then hashed, as shown in the following three examples.
+서명은 증명이 부착되지 않은 크리덴셜에서 시작하며, 이를 정규 형식으로 변환한 뒤
+해싱한다. 다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-employment-authorization-credential-without-proof">
         <div class="marker">
-    <a class="self-link" href="#example-employment-authorization-credential-without-proof">예시<bdi> 19</bdi></a><span class="example-title">: Employment Authorization Credential without Proof</span>
+    <a class="self-link" href="#example-employment-authorization-credential-without-proof">예시<bdi> 19</bdi></a><span class="example-title">: 증명이 없는 취업 허가 크리덴셜</span>
   </div> <pre class="nohighlight">{
     "@context": [
       "https://www.w3.org/ns/credentials/v2",
@@ -2632,7 +2606,7 @@ to canonical form, and then hashed, as shown in the following three examples.
 
         <div class="example" id="example-canonical-employment-authorization-credential-without-proof">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-employment-authorization-credential-without-proof">예시<bdi> 20</bdi></a><span class="example-title">: Canonical Employment Authorization Credential without Proof</span>
+    <a class="self-link" href="#example-canonical-employment-authorization-credential-without-proof">예시<bdi> 20</bdi></a><span class="example-title">: 정규 형식의 증명 없는 취업 허가 크리덴셜</span>
   </div> <pre class="nohighlight">&lt;did:key:zDnaegE6RR3atJtHKwTRTWHsJ3kNHqFwv7n9YjTgmU7TyfU76&gt; &lt;https://schema.org/image&gt; &lt;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NgUPr/HwADaAIhG61j/AAAAABJRU5ErkJggg==&gt; .
 _:c14n0 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://w3id.org/citizenship#EmploymentAuthorizationDocumentCredential&gt; .
 _:c14n0 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://www.w3.org/2018/credentials#VerifiableCredential&gt; .
@@ -2662,18 +2636,18 @@ _:c14n2 &lt;https://w3id.org/citizenship#lprNumber&gt; "999-999-999" .</pre>
 
         <div class="example" id="example-hash-of-canonical-employment-authorization-credential-without-proof-hex">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-employment-authorization-credential-without-proof-hex">예시<bdi> 21</bdi></a><span class="example-title">: Hash of Canonical Employment Authorization Credential without Proof (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-employment-authorization-credential-without-proof-hex">예시<bdi> 21</bdi></a><span class="example-title">: 정규 형식의 증명 없는 취업 허가 크리덴셜의 해시(hex)</span>
   </div> <pre class="nohighlight">03f59e5b04ab575b1172cb684f22eede72f0e9033e0b5c67d0e2506768d6ce11</pre>
       </div>
 
         <p>
-The next step is to take the proof options document, convert it to canonical
-form, and obtain its hash, as shown in the next three examples.
+다음 단계는 증명 옵션 문서를 가져와 정규 형식으로 변환하고 그 해시를 얻는 것이며,
+다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-proof-options-document-0">
         <div class="marker">
-    <a class="self-link" href="#example-proof-options-document-0">예시<bdi> 22</bdi></a><span class="example-title">: Proof Options Document</span>
+    <a class="self-link" href="#example-proof-options-document-0">예시<bdi> 22</bdi></a><span class="example-title">: 증명 옵션 문서</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "cryptosuite": "eddsa-rdfc-2022",
@@ -2689,7 +2663,7 @@ form, and obtain its hash, as shown in the next three examples.
 
         <div class="example" id="example-canonical-proof-options-document-0">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-proof-options-document-0">예시<bdi> 23</bdi></a><span class="example-title">: Canonical Proof Options Document</span>
+    <a class="self-link" href="#example-canonical-proof-options-document-0">예시<bdi> 23</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서</span>
   </div> <pre class="nohighlight">_:c14n0 &lt;http://purl.org/dc/terms/created&gt; "2023-02-24T23:36:38Z"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt; .
 _:c14n0 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://w3id.org/security#DataIntegrityProof&gt; .
 _:c14n0 &lt;https://w3id.org/security#cryptosuite&gt; "eddsa-rdfc-2022"^^&lt;https://w3id.org/security#cryptosuiteString&gt; .
@@ -2699,49 +2673,48 @@ _:c14n0 &lt;https://w3id.org/security#verificationMethod&gt; &lt;did:key:z6MkrJV
 
         <div class="example" id="example-hash-of-canonical-proof-options-document-hex-0">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex-0">예시<bdi> 24</bdi></a><span class="example-title">: Hash of Canonical Proof Options Document (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex-0">예시<bdi> 24</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서의 해시(hex)</span>
   </div> <pre class="nohighlight">bea7b7acfbad0126b135104024a5f1733e705108f42d59668b05c0c50004c6b0</pre>
       </div>
 
         <p>
-Finally, we concatenate the hash of the proof options followed by the hash of
-the credential without proof, use the private key with the combined hash to
-compute the Ed25519 signature, and then base58-btc encode the signature.
+마지막으로, 증명 옵션의 해시 뒤에 증명 없는 크리덴셜의 해시를 이어 붙이고, 그
+결합된 해시에 개인키를 사용하여 Ed25519 서명을 계산한 다음, 그 서명을 base58-btc로
+인코딩한다.
         </p>
 
         <div class="example" id="example-combine-hashes-of-proof-options-and-credential-hex-0">
         <div class="marker">
-    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex-0">예시<bdi> 25</bdi></a><span class="example-title">: Combine hashes of Proof Options and Credential (hex)</span>
+    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex-0">예시<bdi> 25</bdi></a><span class="example-title">: 증명 옵션과 크리덴셜의 해시 결합(hex)</span>
   </div> <pre class="nohighlight">bea7b7acfbad0126b135104024a5f1733e705108f42d59668b05c0c50004c6b003f59e5b04ab575b1172cb684f22eede72f0e9033e0b5c67d0e2506768d6ce11</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-hex-0">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-hex-0">예시<bdi> 26</bdi></a><span class="example-title">: Signature of Combined Hashes (hex)</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-hex-0">예시<bdi> 26</bdi></a><span class="example-title">: 결합된 해시의 서명(hex)</span>
   </div> <pre class="nohighlight">20b1a944960b75ca69ba070af4820de6e6acae1afe827d8c566c0f7b932d1bd3abde3222b3095088051439a8b4e7a5356c7ba6d246774f875ebb6ddee1577003</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-base58-btc-0">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc-0">예시<bdi> 27</bdi></a><span class="example-title">: Signature of Combined Hashes base58-btc</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc-0">예시<bdi> 27</bdi></a><span class="example-title">: 결합된 해시의 서명 base58-btc</span>
   </div> <pre class="nohighlight">zeuuS9pi2ZR8Q41bFFJKS9weSWkwa7pRcxHTHzxjDEHtVSZp3D9Rm3JdzT82EQpmXMb9wvfFJLuDPeSXZaRX1q1c</pre>
       </div>
 
-        <p>Assemble the signed credential with the following two steps:</p>
+        <p>다음 두 단계로 서명된 크리덴셜을 조립한다:</p>
         <ol>
           <li>
-Add the <code>proofValue</code> field with the previously computed base58-btc
-value to the proof options document.
+앞서 계산한 base58-btc 값을 담은 <code>proofValue</code> 필드를 증명 옵션 문서에
+추가한다.
           </li>
           <li>
-Set the <code>proof</code> field of the credential to the augmented proof
-option document.
+크리덴셜의 <code>proof</code> 필드를 그 보강된 증명 옵션 문서로 설정한다.
           </li>
         </ol>
 
         <div class="example" id="example-signed-employment-authorization-credential">
         <div class="marker">
-    <a class="self-link" href="#example-signed-employment-authorization-credential">예시<bdi> 28</bdi></a><span class="example-title">: Signed Employment Authorization Credential</span>
+    <a class="self-link" href="#example-signed-employment-authorization-credential">예시<bdi> 28</bdi></a><span class="example-title">: 서명된 취업 허가 크리덴셜</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -2790,17 +2763,15 @@ option document.
 }</pre>
       </div>
       </section>
-      <section id="representation-eddsa-jcs-2022"><div class="header-wrapper"><h3 id="b-3-representation-eddsa-jcs-2022"><bdi class="secno">B.3 </bdi>Representation: eddsa-jcs-2022</h3><a class="self-link" href="#representation-eddsa-jcs-2022" aria-label="Permalink for Appendix B.3"></a></div>
+      <section id="representation-eddsa-jcs-2022"><div class="header-wrapper"><h3 id="b-3-representation-eddsa-jcs-2022"><bdi class="secno">B.3 </bdi>표현: eddsa-jcs-2022</h3><a class="self-link" href="#representation-eddsa-jcs-2022" aria-label="Permalink for Appendix B.3"></a></div>
         
         <p>
-The signer needs to generate a private/public key pair with the private key used
-for signing and the public key made available for verification. The
-representation of the public key, and the representation of the private key
-are shown below.
+서명자는 서명에 사용할 개인키와 검증에 사용할 수 있도록 공개할 공개키로 이루어진
+개인키/공개키 쌍을 생성해야 한다. 공개키의 표현과 개인키의 표현을 아래에 나타낸다.
         </p>
         <div class="example" id="example-private-and-public-keys-for-signature-1">
         <div class="marker">
-    <a class="self-link" href="#example-private-and-public-keys-for-signature-1">예시<bdi> 29</bdi></a><span class="example-title">: Private and Public keys for Signature</span>
+    <a class="self-link" href="#example-private-and-public-keys-for-signature-1">예시<bdi> 29</bdi></a><span class="example-title">: 서명을 위한 개인키와 공개키</span>
   </div> <pre class="nohighlight">{
   publicKeyMultibase: "z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2",
   secretKeyMultibase: "z3u2en7t5LR2WtQH5PfFqMqwVHBeXouLzo6haApm8XHqvjxq"
@@ -2808,13 +2779,13 @@ are shown below.
       </div>
 
         <p>
-Signing begins with a credential without an attached proof, which is converted
-to canonical form, and then hashed, as shown in the following three examples.
+서명은 증명이 부착되지 않은 크리덴셜에서 시작하며, 이를 정규 형식으로 변환한 뒤
+해싱한다. 다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-credential-without-proof-0">
         <div class="marker">
-    <a class="self-link" href="#example-credential-without-proof-0">예시<bdi> 30</bdi></a><span class="example-title">: Credential without Proof</span>
+    <a class="self-link" href="#example-credential-without-proof-0">예시<bdi> 30</bdi></a><span class="example-title">: 증명이 없는 크리덴셜</span>
   </div> <pre class="nohighlight">{
     "@context": [
         "https://www.w3.org/ns/credentials/v2",
@@ -2835,25 +2806,25 @@ to canonical form, and then hashed, as shown in the following three examples.
 
         <div class="example" id="example-canonical-credential-without-proof-0">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-credential-without-proof-0">예시<bdi> 31</bdi></a><span class="example-title">: Canonical Credential without Proof</span>
+    <a class="self-link" href="#example-canonical-credential-without-proof-0">예시<bdi> 31</bdi></a><span class="example-title">: 정규 형식의 증명 없는 크리덴셜</span>
   </div> <pre class="nohighlight">{"@context":["https://www.w3.org/ns/credentials/v2","https://www.w3.org/ns/credentials/examples/v2"],"credentialSubject":{"alumniOf":"The School of Examples","id":"did:example:abcdefgh"},"description":"A minimum viable example of an Alumni Credential.","id":"urn:uuid:58172aac-d8ba-11ed-83dd-0b3aef56cc33","issuer":"https://vc.example/issuers/5678","name":"Alumni Credential","type":["VerifiableCredential","AlumniCredential"],"validFrom":"2023-01-01T00:00:00Z"}</pre>
       </div>
 
 
         <div class="example" id="example-hash-of-canonical-credential-without-proof-hex-0">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-credential-without-proof-hex-0">예시<bdi> 32</bdi></a><span class="example-title">: Hash of Canonical Credential without Proof (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-credential-without-proof-hex-0">예시<bdi> 32</bdi></a><span class="example-title">: 정규 형식의 증명 없는 크리덴셜의 해시(hex)</span>
   </div> <pre class="nohighlight">59b7cb6251b8991add1ce0bc83107e3db9dbbab5bd2c28f687db1a03abc92f19</pre>
       </div>
 
         <p>
-The next step is to take the proof options document, convert it to canonical form,
-and obtain its hash, as shown in the next three examples.
+다음 단계는 증명 옵션 문서를 가져와 정규 형식으로 변환하고 그 해시를 얻는 것이며,
+다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-proof-options-document-1">
         <div class="marker">
-    <a class="self-link" href="#example-proof-options-document-1">예시<bdi> 33</bdi></a><span class="example-title">: Proof Options Document</span>
+    <a class="self-link" href="#example-proof-options-document-1">예시<bdi> 33</bdi></a><span class="example-title">: 증명 옵션 문서</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "cryptosuite": "eddsa-jcs-2022",
@@ -2869,56 +2840,56 @@ and obtain its hash, as shown in the next three examples.
 
         <div class="example" id="example-canonical-proof-options-document-1">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-proof-options-document-1">예시<bdi> 34</bdi></a><span class="example-title">: Canonical Proof Options Document</span>
+    <a class="self-link" href="#example-canonical-proof-options-document-1">예시<bdi> 34</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서</span>
   </div> <pre class="nohighlight">{"@context":["https://www.w3.org/ns/credentials/v2","https://www.w3.org/ns/credentials/examples/v2"],"created":"2023-02-24T23:36:38Z","cryptosuite":"eddsa-jcs-2022","proofPurpose":"assertionMethod","type":"DataIntegrityProof","verificationMethod":"did:key:z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2#z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2"}</pre>
       </div>
 
         <div class="example" id="example-hash-of-canonical-proof-options-document-hex-1">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex-1">예시<bdi> 35</bdi></a><span class="example-title">: Hash of Canonical Proof Options Document (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex-1">예시<bdi> 35</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서의 해시(hex)</span>
   </div> <pre class="nohighlight">66ab154f5c2890a140cb8388a22a160454f80575f6eae09e5a097cabe539a1db</pre>
       </div>
 
         <p>
-Finally, we concatenate the hash of the proof options followed by the hash of the credential without proof, use the private key with the combined hash to
-compute the Ed25519 signature, and then base58-btc encode the signature.
+마지막으로, 증명 옵션의 해시 뒤에 증명 없는 크리덴셜의 해시를 이어 붙이고, 그
+결합된 해시에 개인키를 사용하여 Ed25519 서명을 계산한 다음, 그 서명을 base58-btc로
+인코딩한다.
         </p>
 
         <div class="example" id="example-combine-hashes-of-proof-options-and-credential-hex-1">
         <div class="marker">
-    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex-1">예시<bdi> 36</bdi></a><span class="example-title">: Combine hashes of Proof Options and Credential (hex)</span>
+    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex-1">예시<bdi> 36</bdi></a><span class="example-title">: 증명 옵션과 크리덴셜의 해시 결합(hex)</span>
   </div> <pre class="nohighlight">66ab154f5c2890a140cb8388a22a160454f80575f6eae09e5a097cabe539a1db59b7cb6251b8991add1ce0bc83107e3db9dbbab5bd2c28f687db1a03abc92f19</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-hex-1">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-hex-1">예시<bdi> 37</bdi></a><span class="example-title">: Signature of Combined Hashes (hex)</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-hex-1">예시<bdi> 37</bdi></a><span class="example-title">: 결합된 해시의 서명(hex)</span>
   </div> <pre class="nohighlight">407cd12654b33d718ecbb99179a1506daaa849450bf3fc523cce3e1c96f8b80351da3f253d725c6f00b07c9e5448d50b3ef78012b9ab54255116d069c6dd2808</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-base58-btc-1">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc-1">예시<bdi> 38</bdi></a><span class="example-title">: Signature of Combined Hashes base58-btc</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc-1">예시<bdi> 38</bdi></a><span class="example-title">: 결합된 해시의 서명 base58-btc</span>
   </div> <pre class="nohighlight">z2HnFSSPPBzR36zdDgK8PbEHeXbR56YF24jwMpt3R1eHXQzJDMWS93FCzpvJpwTWd3GAVFuUfjoJdcnTMuVor51aX</pre>
       </div>
 
         <p>
-Assemble the signed credential with the following two steps:
+다음 두 단계로 서명된 크리덴셜을 조립한다:
 	</p>
         <ol>
           <li>
-Add the <code>proofValue</code> field with the previously computed base58-btc
-value to the proof options document.
+앞서 계산한 base58-btc 값을 담은 <code>proofValue</code> 필드를 증명 옵션 문서에
+추가한다.
           </li>
           <li>
-Set the <code>proof</code> field of the credential to the augmented proof
-option document.
+크리덴셜의 <code>proof</code> 필드를 그 보강된 증명 옵션 문서로 설정한다.
           </li>
         </ol>
 
         <div class="example" id="example-signed-credential-0">
         <div class="marker">
-    <a class="self-link" href="#example-signed-credential-0">예시<bdi> 39</bdi></a><span class="example-title">: Signed Credential</span>
+    <a class="self-link" href="#example-signed-credential-0">예시<bdi> 39</bdi></a><span class="example-title">: 서명된 크리덴셜</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -2952,17 +2923,15 @@ option document.
 }</pre>
       </div>
       </section>
-      <section id="representation-ed25519signature2020"><div class="header-wrapper"><h3 id="b-4-representation-ed25519signature2020"><bdi class="secno">B.4 </bdi>Representation: Ed25519Signature2020</h3><a class="self-link" href="#representation-ed25519signature2020" aria-label="Permalink for Appendix B.4"></a></div>
+      <section id="representation-ed25519signature2020"><div class="header-wrapper"><h3 id="b-4-representation-ed25519signature2020"><bdi class="secno">B.4 </bdi>표현: Ed25519Signature2020</h3><a class="self-link" href="#representation-ed25519signature2020" aria-label="Permalink for Appendix B.4"></a></div>
         
         <p>
-The signer needs to generate a private/public key pair with the private key used
-for signing and the public key made available for verification. The
-representation of the public key, and the representation of the private key,
-are shown below.
+서명자는 서명에 사용할 개인키와 검증에 사용할 수 있도록 공개할 공개키로 이루어진
+개인키/공개키 쌍을 생성해야 한다. 공개키의 표현과 개인키의 표현을 아래에 나타낸다.
         </p>
         <div class="example" id="example-private-and-public-keys-for-signature-2">
         <div class="marker">
-    <a class="self-link" href="#example-private-and-public-keys-for-signature-2">예시<bdi> 40</bdi></a><span class="example-title">: Private and Public keys for Signature</span>
+    <a class="self-link" href="#example-private-and-public-keys-for-signature-2">예시<bdi> 40</bdi></a><span class="example-title">: 서명을 위한 개인키와 공개키</span>
   </div> <pre class="nohighlight">{
     publicKeyMultibase: "z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2",
     secretKeyMultibase: "z3u2en7t5LR2WtQH5PfFqMqwVHBeXouLzo6haApm8XHqvjxq"
@@ -2970,13 +2939,13 @@ are shown below.
       </div>
 
         <p>
-Signing begins with a credential without an attached proof, which is converted
-to canonical form, and then hashed, as shown in the following three examples.
+서명은 증명이 부착되지 않은 크리덴셜에서 시작하며, 이를 정규 형식으로 변환한 뒤
+해싱한다. 다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-credential-without-proof-1">
         <div class="marker">
-    <a class="self-link" href="#example-credential-without-proof-1">예시<bdi> 41</bdi></a><span class="example-title">: Credential without Proof</span>
+    <a class="self-link" href="#example-credential-without-proof-1">예시<bdi> 41</bdi></a><span class="example-title">: 증명이 없는 크리덴셜</span>
   </div> <pre class="nohighlight">{
     "@context": [
         "https://www.w3.org/ns/credentials/v2",
@@ -2997,7 +2966,7 @@ to canonical form, and then hashed, as shown in the following three examples.
 
         <div class="example" id="example-canonical-credential-without-proof-1">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-credential-without-proof-1">예시<bdi> 42</bdi></a><span class="example-title">: Canonical Credential without Proof</span>
+    <a class="self-link" href="#example-canonical-credential-without-proof-1">예시<bdi> 42</bdi></a><span class="example-title">: 정규 형식의 증명 없는 크리덴셜</span>
   </div> <pre class="nohighlight">&lt;did:example:abcdefgh&gt; &lt;https://www.w3.org/ns/credentials/examples#alumniOf&gt; "The School of Examples" .
 &lt;urn:uuid:58172aac-d8ba-11ed-83dd-0b3aef56cc33&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://www.w3.org/2018/credentials#VerifiableCredential&gt; .
 &lt;urn:uuid:58172aac-d8ba-11ed-83dd-0b3aef56cc33&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://www.w3.org/ns/credentials/examples#AlumniCredential&gt; .
@@ -3011,18 +2980,18 @@ to canonical form, and then hashed, as shown in the following three examples.
 
         <div class="example" id="example-hash-of-canonical-credential-without-proof-hex-1">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-credential-without-proof-hex-1">예시<bdi> 43</bdi></a><span class="example-title">: Hash of Canonical Credential without Proof (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-credential-without-proof-hex-1">예시<bdi> 43</bdi></a><span class="example-title">: 정규 형식의 증명 없는 크리덴셜의 해시(hex)</span>
   </div> <pre class="nohighlight">517744132ae165a5349155bef0bb0cf2258fff99dfe1dbd914b938d775a36017</pre>
       </div>
 
         <p>
-The next step is to take the proof options document, convert it to canonical form,
-and obtain its hash, as shown in the next three examples.
+다음 단계는 증명 옵션 문서를 가져와 정규 형식으로 변환하고 그 해시를 얻는 것이며,
+다음 세 예시에 나타낸 바와 같다.
         </p>
 
         <div class="example" id="example-proof-options-document-2">
         <div class="marker">
-    <a class="self-link" href="#example-proof-options-document-2">예시<bdi> 44</bdi></a><span class="example-title">: Proof Options Document</span>
+    <a class="self-link" href="#example-proof-options-document-2">예시<bdi> 44</bdi></a><span class="example-title">: 증명 옵션 문서</span>
   </div> <pre class="nohighlight">{
   "type": "Ed25519Signature2020",
   "created": "2023-02-24T23:36:38Z",
@@ -3038,7 +3007,7 @@ and obtain its hash, as shown in the next three examples.
 
         <div class="example" id="example-canonical-proof-options-document-2">
         <div class="marker">
-    <a class="self-link" href="#example-canonical-proof-options-document-2">예시<bdi> 45</bdi></a><span class="example-title">: Canonical Proof Options Document</span>
+    <a class="self-link" href="#example-canonical-proof-options-document-2">예시<bdi> 45</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서</span>
   </div> <pre class="nohighlight">_:c14n0 &lt;http://purl.org/dc/terms/created&gt; "2023-02-24T23:36:38Z"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt; .
 _:c14n0 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://w3id.org/security#Ed25519Signature2020&gt; .
 _:c14n0 &lt;https://w3id.org/security#proofPurpose&gt; &lt;https://w3id.org/security#assertionMethod&gt; .
@@ -3047,48 +3016,48 @@ _:c14n0 &lt;https://w3id.org/security#verificationMethod&gt; &lt;did:key:z6MkrJV
 
         <div class="example" id="example-hash-of-canonical-proof-options-document-hex-2">
         <div class="marker">
-    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex-2">예시<bdi> 46</bdi></a><span class="example-title">: Hash of Canonical Proof Options Document (hex)</span>
+    <a class="self-link" href="#example-hash-of-canonical-proof-options-document-hex-2">예시<bdi> 46</bdi></a><span class="example-title">: 정규 형식의 증명 옵션 문서의 해시(hex)</span>
   </div> <pre class="nohighlight">04e14bcf5727cba0c0aa04a04d22a56fef915d5f8f7756bb92ae67cb1d0c4847</pre>
       </div>
 
         <p>
-Finally, we concatenate the hash of the proof options followed by the hash of the credential without proof, use the private key with the combined hash to
-compute the Ed25519 signature, and then base58-btc encode the signature.
+마지막으로, 증명 옵션의 해시 뒤에 증명 없는 크리덴셜의 해시를 이어 붙이고, 그
+결합된 해시에 개인키를 사용하여 Ed25519 서명을 계산한 다음, 그 서명을 base58-btc로
+인코딩한다.
         </p>
 
         <div class="example" id="example-combine-hashes-of-proof-options-and-credential-hex-2">
         <div class="marker">
-    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex-2">예시<bdi> 47</bdi></a><span class="example-title">: Combine hashes of Proof Options and Credential (hex)</span>
+    <a class="self-link" href="#example-combine-hashes-of-proof-options-and-credential-hex-2">예시<bdi> 47</bdi></a><span class="example-title">: 증명 옵션과 크리덴셜의 해시 결합(hex)</span>
   </div> <pre class="nohighlight">04e14bcf5727cba0c0aa04a04d22a56fef915d5f8f7756bb92ae67cb1d0c4847517744132ae165a5349155bef0bb0cf2258fff99dfe1dbd914b938d775a36017</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-hex-2">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-hex-2">예시<bdi> 48</bdi></a><span class="example-title">: Signature of Combined Hashes (hex)</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-hex-2">예시<bdi> 48</bdi></a><span class="example-title">: 결합된 해시의 서명(hex)</span>
   </div> <pre class="nohighlight">cd8d023e8a9b462d563bbbd24c4499d8172738eb3f5235d74f65971e9be36dd7f23a1e201791e9a6747e45b8fa877a984f51f591567365c4d8222ecad39be60c</pre>
       </div>
 
         <div class="example" id="example-signature-of-combined-hashes-base58-btc-2">
         <div class="marker">
-    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc-2">예시<bdi> 49</bdi></a><span class="example-title">: Signature of Combined Hashes base58-btc</span>
+    <a class="self-link" href="#example-signature-of-combined-hashes-base58-btc-2">예시<bdi> 49</bdi></a><span class="example-title">: 결합된 해시의 서명 base58-btc</span>
   </div> <pre class="nohighlight">z57Mm1vboMtZiCyJ4aReZsv8co4Re64Y8GEjL1ZARzMbXZgkARFLqFs1P345NpPGG2hgCrS4nNdvJhpwnrNyG3kEF</pre>
       </div>
 
-        <p>Assemble the signed credential with the following two steps:</p>
+        <p>다음 두 단계로 서명된 크리덴셜을 조립한다:</p>
           <ol>
             <li>
-Add the <code>proofValue</code> field with the previously computed base58-btc
-value to the proof options document.
+앞서 계산한 base58-btc 값을 담은 <code>proofValue</code> 필드를 증명 옵션 문서에
+추가한다.
             </li>
             <li>
-Set the <code>proof</code> field of the credential to the augmented proof
-option document.
+크리덴셜의 <code>proof</code> 필드를 그 보강된 증명 옵션 문서로 설정한다.
             </li>
           </ol>
 
         <div class="example" id="example-signed-credential-1">
         <div class="marker">
-    <a class="self-link" href="#example-signed-credential-1">예시<bdi> 50</bdi></a><span class="example-title">: Signed Credential</span>
+    <a class="self-link" href="#example-signed-credential-1">예시<bdi> 50</bdi></a><span class="example-title">: 서명된 크리덴셜</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3118,18 +3087,17 @@ option document.
 }</pre>
       </div>
       </section>
-      <section id="proof-sets-and-chains"><div class="header-wrapper"><h3 id="b-5-proof-sets-and-chains"><bdi class="secno">B.5 </bdi>Proof Sets and Chains</h3><a class="self-link" href="#proof-sets-and-chains" aria-label="Permalink for Appendix B.5"></a></div>
+      <section id="proof-sets-and-chains"><div class="header-wrapper"><h3 id="b-5-proof-sets-and-chains"><bdi class="secno">B.5 </bdi>증명 집합과 증명 체인</h3><a class="self-link" href="#proof-sets-and-chains" aria-label="Permalink for Appendix B.5"></a></div>
         
         <p>
-Proof sets and chains are defined in the [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]. We
-provide test vectors showing the creation of proof sets and chains with the
-<code>eddsa-rdfc-2022</code> cryptosuite. Multiple signers can be involved in the generation
-of proof sets and chains so multiple public/private key pairs are needed. These
-are shown below.
+증명 집합과 증명 체인은 [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]에 정의되어 있다. 여기서는
+<code>eddsa-rdfc-2022</code> 암호 스위트로 증명 집합과 증명 체인을 생성하는 과정을
+보여주는 테스트 벡터를 제공한다. 증명 집합과 증명 체인의 생성에는 여러 서명자가
+관여할 수 있으므로 여러 개의 공개키/개인키 쌍이 필요하다. 이를 아래에 나타낸다.
         </p>
         <div class="example" id="example-public-and-private-key-pairs">
         <div class="marker">
-    <a class="self-link" href="#example-public-and-private-key-pairs">예시<bdi> 51</bdi></a><span class="example-title">: Public and Private Key Pairs</span>
+    <a class="self-link" href="#example-public-and-private-key-pairs">예시<bdi> 51</bdi></a><span class="example-title">: 공개키·개인키 쌍</span>
   </div> <pre class="nohighlight">{
   "keyPair1": {
     "publicKeyMultibase": "z6MktgKTsu1QhX6QPbyqG6geXdw6FQCZBPq7uQpieWbiQiG7",
@@ -3150,11 +3118,11 @@ are shown below.
 }</pre>
       </div>
         <p>
-The original unsigned credential is shown below:
+원본 서명되지 않은 크리덴셜을 아래에 나타낸다:
         </p>
         <div class="example" id="example-unsigned-credential">
         <div class="marker">
-    <a class="self-link" href="#example-unsigned-credential">예시<bdi> 52</bdi></a><span class="example-title">: Unsigned Credential</span>
+    <a class="self-link" href="#example-unsigned-credential">예시<bdi> 52</bdi></a><span class="example-title">: 서명되지 않은 크리덴셜</span>
   </div> <pre class="nohighlight">{
     "@context": [
         "https://www.w3.org/ns/credentials/v2",
@@ -3172,16 +3140,16 @@ The original unsigned credential is shown below:
     }
 }</pre>
       </div>
-        <section id="proof-set"><div class="header-wrapper"><h4 id="b-5-1-proof-set"><bdi class="secno">B.5.1 </bdi>Proof Set</h4><a class="self-link" href="#proof-set" aria-label="Permalink for Appendix B.5.1"></a></div>
+        <section id="proof-set"><div class="header-wrapper"><h4 id="b-5-1-proof-set"><bdi class="secno">B.5.1 </bdi>증명 집합</h4><a class="self-link" href="#proof-set" aria-label="Permalink for Appendix B.5.1"></a></div>
           
           <p>
-To demonstrate creating a proof set, we start with a document containing a
-single proof and add another proof to it. The starting document is shown below and
-contains a proof signed with <code>keyPair1</code>.
+증명 집합 생성을 보이기 위해, 단일 증명을 담은 문서에서 시작하여 여기에 또 다른
+증명을 추가한다. 시작 문서를 아래에 나타내며, <code>keyPair1</code>로 서명된 증명을
+담고 있다.
           </p>
           <div class="example" id="example-starting-document-for-proof-set">
         <div class="marker">
-    <a class="self-link" href="#example-starting-document-for-proof-set">예시<bdi> 53</bdi></a><span class="example-title">: Starting Document for Proof Set</span>
+    <a class="self-link" href="#example-starting-document-for-proof-set">예시<bdi> 53</bdi></a><span class="example-title">: 증명 집합을 위한 시작 문서</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3212,15 +3180,14 @@ contains a proof signed with <code>keyPair1</code>.
 }</pre>
       </div>
           <p>
-The <code>options</code> input to <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
-Section 4.4: Add Proof Set/Chain</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]
-is shown below. Note that it does not include a <code>previousProof</code> attribute since
-we are constructing a proof set and not a chain. In addition, we will be using
-<code>keyPair2</code> for signing.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
+4.4절: 증명 집합/체인 추가</a>에 대한 <code>options</code> 입력을 아래에 나타낸다.
+여기서는 체인이 아니라 증명 집합을 구성하고 있으므로 <code>previousProof</code> 속성을
+포함하지 않는다는 점에 유의한다. 또한 서명에는 <code>keyPair2</code>를 사용한다.
           </p>
           <div class="example" id="example-proof-options-for-set">
         <div class="marker">
-    <a class="self-link" href="#example-proof-options-for-set">예시<bdi> 54</bdi></a><span class="example-title">: Proof Options for Set</span>
+    <a class="self-link" href="#example-proof-options-for-set">예시<bdi> 54</bdi></a><span class="example-title">: 집합을 위한 증명 옵션</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "id": "urn:uuid:8cc9022b-6b14-4cf3-8571-74972c5feb54",
@@ -3231,18 +3198,16 @@ we are constructing a proof set and not a chain. In addition, we will be using
 }</pre>
       </div>
           <p>
-Per the algorithm of <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
-Section 4.4: Add Proof Set/Chain</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>],
-we create an array variable, <code>allProofs</code>, and add the proof from the
-starting document to it. Since there is no <code>previousProof</code> attribute, no
-modification of <code>unsignedDocument</code> is needed prior to computing the signed proof
-in step 6 of <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
-Section 4.4: Add Proof Set/Chain</a> in
-[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]. The signed proof configuration is shown below.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
+4.4절: 증명 집합/체인 추가</a> 알고리즘에 따라, 배열 변수 <code>allProofs</code>를
+만들고 시작 문서의 증명을 여기에 추가한다. <code>previousProof</code> 속성이 없으므로,
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
+4.4절: 증명 집합/체인 추가</a> 6단계에서 서명된 증명을 계산하기에 앞서
+<code>unsignedDocument</code>를 수정할 필요가 없다. 서명된 증명 구성을 아래에 나타낸다.
           </p>
           <div class="example" id="example-signed-proof-options">
         <div class="marker">
-    <a class="self-link" href="#example-signed-proof-options">예시<bdi> 55</bdi></a><span class="example-title">: Signed Proof Options</span>
+    <a class="self-link" href="#example-signed-proof-options">예시<bdi> 55</bdi></a><span class="example-title">: 서명된 증명 옵션</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "id": "urn:uuid:8cc9022b-6b14-4cf3-8571-74972c5feb54",
@@ -3254,13 +3219,13 @@ Section 4.4: Add Proof Set/Chain</a> in
 }</pre>
       </div>
           <p>
-The signed proof <code>options</code> above gets appended to the <code>allProofs</code>
-variable, which then gets set as the <code>proof</code> attribute of the unsigned document
-to produce the final signed document as shown below.
+위의 서명된 증명 <code>options</code>는 <code>allProofs</code> 변수에 덧붙여지고, 이는
+다시 서명되지 않은 문서의 <code>proof</code> 속성으로 설정되어 아래에 나타낸 최종
+서명된 문서를 만든다.
           </p>
           <div class="example" id="example-signed-proof-set">
         <div class="marker">
-    <a class="self-link" href="#example-signed-proof-set">예시<bdi> 56</bdi></a><span class="example-title">: Signed Proof Set</span>
+    <a class="self-link" href="#example-signed-proof-set">예시<bdi> 56</bdi></a><span class="example-title">: 서명된 증명 집합</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3303,19 +3268,17 @@ to produce the final signed document as shown below.
       </div>
         </section>
 
-        <section id="proof-chain-with-multiple-dependencies"><div class="header-wrapper"><h4 id="b-5-2-proof-chain-with-multiple-dependencies"><bdi class="secno">B.5.2 </bdi>Proof Chain with Multiple Dependencies</h4><a class="self-link" href="#proof-chain-with-multiple-dependencies" aria-label="Permalink for Appendix B.5.2"></a></div>
+        <section id="proof-chain-with-multiple-dependencies"><div class="header-wrapper"><h4 id="b-5-2-proof-chain-with-multiple-dependencies"><bdi class="secno">B.5.2 </bdi>다중 의존성을 갖는 증명 체인</h4><a class="self-link" href="#proof-chain-with-multiple-dependencies" aria-label="Permalink for Appendix B.5.2"></a></div>
           
           <p>
-This collection of test vectors demonstrates the construction a proof chain. We
-start with a document containing a proof set, i.e., our previous example, and
-then add a new proof to the credential that has a dependency on the existing
-proofs. This example also demonstrates the case where the <code>previousProofs</code>
-attribute is an array. This example uses <code>keyPair3</code> and the starting document is
-given below.
+이 테스트 벡터 모음은 증명 체인의 구성을 보여준다. 증명 집합을 담은 문서, 즉 앞의
+예시에서 시작하여, 기존 증명에 대한 의존성을 갖는 새 증명을 크리덴셜에 추가한다. 이
+예시는 <code>previousProofs</code> 속성이 배열인 경우도 보여준다. 이 예시는
+<code>keyPair3</code>을 사용하며 시작 문서는 아래와 같다.
           </p>
           <div class="example" id="example-starting-document-for-proof-chain">
         <div class="marker">
-    <a class="self-link" href="#example-starting-document-for-proof-chain">예시<bdi> 57</bdi></a><span class="example-title">: Starting Document for Proof Chain</span>
+    <a class="self-link" href="#example-starting-document-for-proof-chain">예시<bdi> 57</bdi></a><span class="example-title">: 증명 체인을 위한 시작 문서</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3357,14 +3320,14 @@ given below.
 }</pre>
       </div>
           <p>
-The <code>options</code> input to <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
-Section 4.4: Add Proof Set/Chain</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]
-is shown below. Note that it includes a <code>previousProof</code> attribute since we are
-constructing a proof chain.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
+4.4절: 증명 집합/체인 추가</a>에 대한 <code>options</code> 입력을 아래에 나타낸다.
+여기서는 증명 체인을 구성하고 있으므로 <code>previousProof</code> 속성을 포함한다는 점에
+유의한다.
           </p>
           <div class="example" id="example-options-for-proof-chain">
         <div class="marker">
-    <a class="self-link" href="#example-options-for-proof-chain">예시<bdi> 58</bdi></a><span class="example-title">: Options for Proof Chain</span>
+    <a class="self-link" href="#example-options-for-proof-chain">예시<bdi> 58</bdi></a><span class="example-title">: 증명 체인을 위한 옵션</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "id": "urn:uuid:d94f792a-c546-4d06-b38a-da070ab56c23",
@@ -3379,19 +3342,17 @@ constructing a proof chain.
 }</pre>
       </div>
           <p>
-Per the algorithm of <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
-Section 4.4: Add Proof Set/Chain</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>],
-we create an array variable, <code>allProofs</code>, and add the proofs from the
-starting document to it. Since the options contains the <code>previousProof</code>
-attribute, we compute the <code>matchingProofs</code> variable per step 4
-of <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">Section 4.4: Add Proof
-Set/Chain</a>, and we set the
-<code>unsecuredDocument.proof</code> equal to the <code>matchingProofs</code>. This
-produces the document shown below.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
+4.4절: 증명 집합/체인 추가</a> 알고리즘에 따라, 배열 변수 <code>allProofs</code>를
+만들고 시작 문서의 증명들을 여기에 추가한다. options에 <code>previousProof</code> 속성이
+있으므로, <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">4.4절: 증명 집합/체인
+추가</a>의 4단계에 따라 <code>matchingProofs</code> 변수를 계산하고,
+<code>unsecuredDocument.proof</code>를 <code>matchingProofs</code>와 같게 설정한다. 이로써
+아래에 나타낸 문서가 만들어진다.
           </p>
           <div class="example" id="example-temporary-unsecured-document-for-binding-previous-proofs">
         <div class="marker">
-    <a class="self-link" href="#example-temporary-unsecured-document-for-binding-previous-proofs">예시<bdi> 59</bdi></a><span class="example-title">: Temporary Unsecured Document for Binding Previous Proofs</span>
+    <a class="self-link" href="#example-temporary-unsecured-document-for-binding-previous-proofs">예시<bdi> 59</bdi></a><span class="example-title">: 이전 증명을 바인딩하기 위한 임시 비보안 문서</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3433,13 +3394,13 @@ produces the document shown below.
 }</pre>
       </div>
           <p>
-In step 6, we use the previous document (unsecured document with previous proofs
-added to it) to compute the <code>proofValue</code> attribute. This gives the signed
-configuration options (proof) shown below:
+6단계에서는 앞의 문서(이전 증명들이 추가된 비보안 문서)를 사용하여
+<code>proofValue</code> 속성을 계산한다. 이로써 아래에 나타낸 서명된 구성 옵션(증명)이
+만들어진다:
           </p>
           <div class="example" id="example-signed-configuration-options-proof">
         <div class="marker">
-    <a class="self-link" href="#example-signed-configuration-options-proof">예시<bdi> 60</bdi></a><span class="example-title">: Signed Configuration Options (proof)</span>
+    <a class="self-link" href="#example-signed-configuration-options-proof">예시<bdi> 60</bdi></a><span class="example-title">: 서명된 구성 옵션(증명)</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "id": "urn:uuid:d94f792a-c546-4d06-b38a-da070ab56c23",
@@ -3455,13 +3416,13 @@ configuration options (proof) shown below:
 }</pre>
       </div>
           <p>
-The signed proof <code>options</code> above gets appended to the <code>allProofs</code>
-variable, which then gets set as the <code>proof</code> attribute of the unsigned document
-to produce the final signed document as shown below.
+위의 서명된 증명 <code>options</code>는 <code>allProofs</code> 변수에 덧붙여지고, 이는
+다시 서명되지 않은 문서의 <code>proof</code> 속성으로 설정되어 아래에 나타낸 최종
+서명된 문서를 만든다.
           </p>
           <div class="example" id="example-signed-proof-chain">
         <div class="marker">
-    <a class="self-link" href="#example-signed-proof-chain">예시<bdi> 61</bdi></a><span class="example-title">: Signed Proof Chain</span>
+    <a class="self-link" href="#example-signed-proof-chain">예시<bdi> 61</bdi></a><span class="example-title">: 서명된 증명 체인</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3516,17 +3477,16 @@ to produce the final signed document as shown below.
 }</pre>
       </div>
         </section>
-        <section id="extended-proof-chain"><div class="header-wrapper"><h4 id="b-5-3-extended-proof-chain"><bdi class="secno">B.5.3 </bdi>Extended Proof Chain</h4><a class="self-link" href="#extended-proof-chain" aria-label="Permalink for Appendix B.5.3"></a></div>
+        <section id="extended-proof-chain"><div class="header-wrapper"><h4 id="b-5-3-extended-proof-chain"><bdi class="secno">B.5.3 </bdi>확장 증명 체인</h4><a class="self-link" href="#extended-proof-chain" aria-label="Permalink for Appendix B.5.3"></a></div>
           
           <p>
-This collection of test vectors demonstrates construction of an extended proof
-chain. We start with the output of the previous section and add an additional
-proof that is dependent on one of the existing proofs. This example uses
-<code>keyPair4</code>, and the starting document is given below.
+이 테스트 벡터 모음은 확장 증명 체인의 구성을 보여준다. 앞 절의 출력에서 시작하여,
+기존 증명 중 하나에 의존하는 추가 증명을 더한다. 이 예시는 <code>keyPair4</code>를
+사용하며 시작 문서는 아래와 같다.
           </p>
           <div class="example" id="example-starting-document-for-extended-proof-chain">
         <div class="marker">
-    <a class="self-link" href="#example-starting-document-for-extended-proof-chain">예시<bdi> 62</bdi></a><span class="example-title">: Starting Document for Extended Proof Chain</span>
+    <a class="self-link" href="#example-starting-document-for-extended-proof-chain">예시<bdi> 62</bdi></a><span class="example-title">: 확장 증명 체인을 위한 시작 문서</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3581,14 +3541,14 @@ proof that is dependent on one of the existing proofs. This example uses
 }</pre>
       </div>
           <p>
-The <code>options</code> input to <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
-Section 4.4: Add Proof Set/Chain</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]
-is shown below. Note that it includes a <code>previousProof</code> attribute since we are
-constructing a proof chain, however this time it is a single value.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
+4.4절: 증명 집합/체인 추가</a>에 대한 <code>options</code> 입력을 아래에 나타낸다.
+여기서는 증명 체인을 구성하고 있으므로 <code>previousProof</code> 속성을 포함하지만, 이번에는
+단일 값이라는 점에 유의한다.
           </p>
           <div class="example" id="example-options-for-extended-proof-chain">
         <div class="marker">
-    <a class="self-link" href="#example-options-for-extended-proof-chain">예시<bdi> 63</bdi></a><span class="example-title">: Options for Extended Proof Chain</span>
+    <a class="self-link" href="#example-options-for-extended-proof-chain">예시<bdi> 63</bdi></a><span class="example-title">: 확장 증명 체인을 위한 옵션</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "cryptosuite": "eddsa-rdfc-2022",
@@ -3599,19 +3559,17 @@ constructing a proof chain, however this time it is a single value.
 }</pre>
       </div>
           <p>
-Per the algorithm of <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
-Section 4.4: Add Proof Set/Chain</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>],
-we create an array variable, <code>allProofs</code>, and add the proofs from the
-starting document to it. Since the <code>options</code> contains the <code>previousProof</code>
-attribute, we compute the <code>matchingProofs</code> variable per step 4
-of <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">Section 4.4: Add Proof
-Set/Chain</a>, and we set the
-<code>unsecuredDocument.proof</code> equal to the <code>matchingProofs</code>. This
-produces the document shown below.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-data-integrity" title="Verifiable Credential Data Integrity 1.0">VC-DATA-INTEGRITY</a></cite>]의 <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">
+4.4절: 증명 집합/체인 추가</a> 알고리즘에 따라, 배열 변수 <code>allProofs</code>를
+만들고 시작 문서의 증명들을 여기에 추가한다. <code>options</code>에 <code>previousProof</code>
+속성이 있으므로, <a href="https://www.w3.org/TR/vc-data-integrity/#add-proof-set-chain">4.4절: 증명 집합/체인
+추가</a>의 4단계에 따라 <code>matchingProofs</code> 변수를 계산하고,
+<code>unsecuredDocument.proof</code>를 <code>matchingProofs</code>와 같게 설정한다. 이로써
+아래에 나타낸 문서가 만들어진다.
           </p>
           <div class="example" id="example-temporary-unsecured-document-for-binding-previous-proofs-extended-chain">
         <div class="marker">
-    <a class="self-link" href="#example-temporary-unsecured-document-for-binding-previous-proofs-extended-chain">예시<bdi> 64</bdi></a><span class="example-title">: Temporary Unsecured Document for Binding Previous Proofs (Extended Chain)</span>
+    <a class="self-link" href="#example-temporary-unsecured-document-for-binding-previous-proofs-extended-chain">예시<bdi> 64</bdi></a><span class="example-title">: 이전 증명을 바인딩하기 위한 임시 비보안 문서(확장 체인)</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -3648,13 +3606,13 @@ produces the document shown below.
 }</pre>
       </div>
           <p>
-In step 6, we use the previous document (unsecured document with previous proofs
-added to it) to compute the <code>proofValue</code> attribute. This gives the signed
-configuration options (proof) shown below:
+6단계에서는 앞의 문서(이전 증명들이 추가된 비보안 문서)를 사용하여
+<code>proofValue</code> 속성을 계산한다. 이로써 아래에 나타낸 서명된 구성 옵션(증명)이
+만들어진다:
           </p>
           <div class="example" id="example-signed-configuration-options-extended">
         <div class="marker">
-    <a class="self-link" href="#example-signed-configuration-options-extended">예시<bdi> 65</bdi></a><span class="example-title">: Signed Configuration Options (Extended)</span>
+    <a class="self-link" href="#example-signed-configuration-options-extended">예시<bdi> 65</bdi></a><span class="example-title">: 서명된 구성 옵션(확장)</span>
   </div> <pre class="nohighlight">{
   "type": "DataIntegrityProof",
   "cryptosuite": "eddsa-rdfc-2022",
@@ -3666,13 +3624,13 @@ configuration options (proof) shown below:
 }</pre>
       </div>
           <p>
-The signed proof <code>options</code> above gets appended to the <code>allProofs</code>
-variable, which then gets set as the <code>proof</code> attribute of the unsigned document
-to produce the final signed document as shown below.
+위의 서명된 증명 <code>options</code>는 <code>allProofs</code> 변수에 덧붙여지고, 이는
+다시 서명되지 않은 문서의 <code>proof</code> 속성으로 설정되어 아래에 나타낸 최종
+서명된 문서를 만든다.
           </p>
           <div class="example" id="example-signed-proof-chain-extended">
         <div class="marker">
-    <a class="self-link" href="#example-signed-proof-chain-extended">예시<bdi> 66</bdi></a><span class="example-title">: Signed Proof Chain (Extended)</span>
+    <a class="self-link" href="#example-signed-proof-chain-extended">예시<bdi> 66</bdi></a><span class="example-title">: 서명된 증명 체인(확장)</span>
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
